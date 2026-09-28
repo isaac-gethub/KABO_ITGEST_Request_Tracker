@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Evidence Request Tracker · GE Petrol Phase 0 · Kabo Solutions</title>
+<link rel="icon" href="data:image/png;base64,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">
+<style>
+:root{color-scheme:light;--blue:#0B5FA5;--blue-d:#0D446D;--tint:#EAF2FA;--ink:#14243D;--muted:#5B6B82;--line:#DCE4EE;--bg:#F4F7FB;--card:#fff;
+--c-awaiting:#98A2B3;--c-received:#0B5FA5;--c-accepted:#12A0A0;--c-followup:#E39A1B;--c-verified:#2E9E5B;--c-na:#CBD2DC;--red:#C0392B;
+--r:12px;--sh:0 1px 2px rgba(20,36,61,.06),0 4px 14px rgba(20,36,61,.05)}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);-webkit-text-size-adjust:100%}
+a{color:var(--blue)}
+button,select,input,textarea{font:inherit;color:inherit}
+.top{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.top-in{max-width:1240px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);min-width:0}
+.brand img{width:40px;height:40px;flex:none}
+.brand b{display:block;font-size:17px;color:var(--blue);line-height:1.2}
+.brand span{display:block;font-size:12px;color:var(--muted)}
+.who{display:flex;align-items:center;gap:8px;flex:none}
+.role{font-size:12px;padding:4px 10px;border-radius:99px;background:var(--tint);color:var(--blue-d);font-weight:600;white-space:nowrap}
+.role.ed{background:var(--blue);color:#fff}
+.nav{max-width:1240px;margin:0 auto;padding:0 12px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
+.nav a{padding:10px 14px;text-decoration:none;color:var(--muted);font-weight:600;border-bottom:3px solid transparent;white-space:nowrap}
+.nav a:hover{color:var(--blue)}
+.nav a.on{color:var(--blue);border-color:var(--blue)}
+.banner{padding:8px 20px;font-size:12.5px;text-align:center}
+.banner.info{background:#EAF2FA;color:var(--blue-d)}
+.banner.warn{background:#FFF3D6;color:#7A5300}
+.banner.snap{background:#E6F5EC;color:#1E6B3F}
+main{max-width:1240px;margin:0 auto;padding:20px}
+h1{font-size:22px;margin:0 0 4px}
+h2{font-size:16px;margin:0 0 10px}
+h3{font-size:14px;margin:0 0 6px}
+.sub{color:var(--muted);font-size:12.5px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);padding:16px;margin-bottom:16px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid2>.card,.grid3>.card{margin-bottom:0}
+.pagehead{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--blue);background:var(--blue);color:#fff;padding:8px 14px;border-radius:8px;font-weight:600;cursor:pointer;text-decoration:none;font-size:13px}
+.btn:hover{background:var(--blue-d)}
+.btn.ghost{background:#fff;color:var(--blue)}
+.btn.ghost:hover{background:var(--tint)}
+.btn.sm{padding:5px 10px;font-size:12px}
+.btn.danger{background:#fff;color:var(--red);border-color:var(--red)}
+.btn[disabled]{opacity:.45;cursor:not-allowed}
+:focus-visible{outline:3px solid #7DB4E6;outline-offset:1px}
+/* hero */
+.hero{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.hcol{border:1px solid var(--line);border-radius:10px;padding:14px;background:#fff}
+.hc-top{display:flex;gap:12px;align-items:center;margin-bottom:10px}
+.hc-t{font-weight:700;font-size:15px}
+.hc-s{font-size:12px;color:var(--muted)}
+.hc-n{font-size:12.5px;margin-top:8px;color:var(--muted)}
+.hc-n b{color:var(--ink)}
+.warn{color:#9A6100;font-weight:600}
+.ring{width:64px;height:64px;flex:none;position:relative}
+.ring svg{transform:rotate(-90deg)}
+.ring span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px}
+.stack{display:flex;height:12px;border-radius:99px;overflow:hidden;background:#EDF1F6}
+.stack .seg{height:100%}
+.s-awaiting{background:var(--c-awaiting)}.s-received{background:var(--c-received)}.s-accepted{background:var(--c-accepted)}
+.s-followup{background:var(--c-followup)}.s-verified{background:var(--c-verified)}.s-na{background:var(--c-na)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12px;color:var(--muted);margin:0 0 12px}
+.legend i,.badge i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px}
+.badge{display:inline-flex;align-items:center;padding:3px 9px;border-radius:99px;font-size:12px;font-weight:600;white-space:nowrap}
+.badge i{margin-right:6px}
+.b-awaiting{background:#EEF0F4;color:#4C566A}.b-awaiting i{background:var(--c-awaiting)}
+.b-received{background:#E3EEF9;color:#0B4F8A}.b-received i{background:var(--c-received)}
+.b-accepted{background:#DDF3F3;color:#0B6666}.b-accepted i{background:var(--c-accepted)}
+.b-followup{background:#FFF1D4;color:#8A5A00}.b-followup i{background:var(--c-followup)}
+.b-verified{background:#DFF3E7;color:#1E6B3F}.b-verified i{background:var(--c-verified)}
+.b-na{background:#F1F3F6;color:#6B7688}.b-na i{background:var(--c-na)}
+.chip{display:inline-block;padding:2px 8px;border-radius:6px;font-size:11.5px;font-weight:600;background:#EEF0F4;color:#4C566A;white-space:nowrap}
+.chip.g{background:#DFF3E7;color:#1E6B3F}.chip.a{background:#FFF1D4;color:#8A5A00}.chip.r{background:#FBE3E0;color:#9B2C20}.chip.b{background:#E3EEF9;color:#0B4F8A}
+.tbc{color:#9AA5B5;font-style:italic}
+.kv{display:grid;grid-template-columns:150px 1fr;gap:8px 10px;font-size:13px}
+.kv dt{color:var(--muted)}.kv dd{margin:0}
+.late{color:var(--red);font-weight:600}.soon{color:#9A6100;font-weight:600}
+/* package tiles */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.tile{border:1px solid var(--line);border-left:5px solid var(--c-awaiting);border-radius:8px;padding:10px;background:#fff;cursor:pointer;text-align:left;display:block;width:100%}
+.tile:hover{box-shadow:var(--sh)}
+.tile.t-received{border-left-color:var(--c-received)}.tile.t-accepted{border-left-color:var(--c-accepted)}.tile.t-followup{border-left-color:var(--c-followup)}.tile.t-verified{border-left-color:var(--c-verified)}.tile.t-na{border-left-color:var(--c-na)}
+.tile .pid{font-size:11px;color:var(--muted);font-weight:700}
+.tile .pn{font-weight:600;font-size:13px;margin:2px 0 8px;min-height:36px}
+/* rows / bars */
+.brow{display:grid;grid-template-columns:190px 1fr 92px;gap:12px;align-items:center;padding:7px 0;border-bottom:1px solid #EEF2F7;cursor:pointer}
+.brow:last-child{border-bottom:0}
+.brow:hover .bl{color:var(--blue)}
+.bl{font-weight:600}
+.bn{text-align:right;font-size:12.5px;color:var(--muted)}
+table.mini{width:100%;border-collapse:collapse;font-size:13px}
+table.mini th{text-align:left;font-size:11.5px;color:var(--muted);font-weight:600;padding:4px 6px;border-bottom:1px solid var(--line)}
+table.mini td{padding:7px 6px;border-bottom:1px solid #EEF2F7}
+table.mini td.n,table.mini th.n{text-align:right}
+.li{display:flex;gap:10px;padding:7px 0;border-bottom:1px solid #EEF2F7;font-size:13px;align-items:flex-start;cursor:pointer}
+.li:last-child{border-bottom:0}
+.li .id{font-weight:700;min-width:64px;color:var(--blue-d)}
+.empty{padding:22px;text-align:center;color:var(--muted)}
+/* tracker */
+.seg-tabs{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+.seg-tabs button{border:0;background:#fff;padding:9px 14px;font-weight:600;cursor:pointer;color:var(--muted)}
+.seg-tabs button.on{background:var(--blue);color:#fff}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.filters input,.filters select,.f-in,.f-sel,textarea.f-in{border:1px solid #C9D3E0;border-radius:8px;padding:7px 10px;background:#fff;min-width:0}
+.filters input{flex:1 1 220px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.chips button{border:1px solid var(--line);background:#fff;border-radius:99px;padding:4px 11px;font-size:12px;cursor:pointer;font-weight:600;color:var(--muted)}
+.chips button.on{background:var(--blue);border-color:var(--blue);color:#fff}
+.bulk{display:flex;flex-wrap:wrap;gap:8px;align-items:center;background:var(--tint);border:1px solid #C9DBEF;border-radius:10px;padding:8px 12px;margin-bottom:10px;font-size:13px}
+.tw{background:#fff;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);overflow:auto;max-height:calc(100vh - 250px)}
+table.grid{width:100%;border-collapse:separate;border-spacing:0;font-size:13px}
+table.grid th{position:sticky;top:0;background:#F7F9FC;text-align:left;font-size:11.5px;color:var(--muted);padding:9px 10px;border-bottom:1px solid var(--line);z-index:2;white-space:nowrap}
+table.grid td{padding:8px 8px;border-bottom:1px solid #EEF2F7;vertical-align:top}
+table.grid tr:hover td{background:#FAFCFF}
+table.grid td.id{font-weight:700;color:var(--blue-d);white-space:nowrap;cursor:pointer}
+table.grid td.id small{display:block;font-weight:500;color:var(--muted);font-size:11px}
+table.grid td.txt{min-width:220px;cursor:pointer}
+table.grid td.txt .ws{font-size:11px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+.f-sel{padding:4px 4px;font-size:12px;max-width:124px}
+/* drawer / modal */
+.scrim{position:fixed;inset:0;background:rgba(20,36,61,.4);z-index:40}
+.drawer{position:fixed;top:0;right:0;bottom:0;width:min(520px,100%);background:#fff;z-index:41;box-shadow:-8px 0 30px rgba(0,0,0,.18);display:flex;flex-direction:column}
+.dr-h{padding:16px 18px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.dr-b{padding:16px 18px;overflow:auto;flex:1}
+.dr-f{padding:12px 18px;border-top:1px solid var(--line);display:flex;gap:8px;justify-content:flex-end;background:#F7F9FC}
+.fld{margin-bottom:12px}
+.fld label{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-bottom:4px}
+.fld .f-in,.fld .f-sel{width:100%;max-width:none}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.modal{position:fixed;z-index:41;left:50%;top:50%;transform:translate(-50%,-50%);background:#fff;border-radius:14px;padding:22px;width:min(420px,92vw);box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 14px;border-radius:10px;z-index:60;display:flex;gap:14px;align-items:center;font-size:13px;max-width:92vw}
+.toast button{background:none;border:0;color:#9CD0FF;font-weight:700;cursor:pointer}
+.qchips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0}
+.qchip{background:var(--tint);border:1px solid #C9DBEF;color:var(--blue-d);border-radius:99px;padding:3px 6px 3px 10px;font-size:12px;font-weight:700;display:inline-flex;gap:6px;align-items:center}
+.qchip button{border:0;background:none;cursor:pointer;color:var(--muted);font-size:14px;line-height:1}
+.sug{border:1px solid var(--line);border-radius:8px;background:#fff;margin-top:4px;max-height:240px;overflow:auto}
+.sug button{display:block;width:100%;text-align:left;border:0;background:#fff;padding:8px 10px;cursor:pointer;border-bottom:1px solid #EEF2F7;font-size:13px}
+.sug button:hover{background:var(--tint)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;padding:8px 0 8px 36px;position:relative}
+.steps li:before{content:counter(s);position:absolute;left:0;top:7px;width:24px;height:24px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:12px}
+details.d{border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin-bottom:8px;background:#fff}
+details.d summary{cursor:pointer;font-weight:600}
+footer{max-width:1240px;margin:0 auto;padding:6px 20px 30px;color:var(--muted);font-size:12px}
+.chart{width:100%;height:auto;display:block}
+@media (max-width:880px){
+ .hero,.grid3{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}.tiles{grid-template-columns:repeat(2,1fr)}
+ .brow{grid-template-columns:130px 1fr 80px}
+ .tw{max-height:none;border:0;box-shadow:none;background:transparent;overflow:visible}
+ table.grid,table.grid tbody,table.grid tr,table.grid td{display:block}
+ table.grid thead{display:none}
+ table.grid tr{background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;padding:8px 10px;box-shadow:var(--sh)}
+ table.grid td{border:0;padding:4px 0;display:flex;justify-content:space-between;gap:12px;align-items:center}
+ table.grid td[data-l]:before{content:attr(data-l);color:var(--muted);font-size:11.5px;font-weight:600;flex:none}
+ table.grid td.txt,table.grid td.id{display:block}
+ table.grid td.chk{display:block}
+ table.grid tr:hover td{background:none}
+}
+@media (max-width:600px){
+ main{padding:12px}.top-in{padding:8px 12px}.brand span{display:none}.brand b{font-size:15px}
+ .tiles{grid-template-columns:1fr}.two{grid-template-columns:1fr}.kv{grid-template-columns:120px 1fr}
+ .brow{grid-template-columns:1fr 70px;gap:4px 10px}.brow .stack{grid-column:1/-1;order:3}
+ .drawer{width:100%}.btn{padding:10px 14px}.f-sel,.f-in{font-size:16px}.seg-tabs{width:100%}.seg-tabs button{flex:1;padding:10px 6px}
+ .nav a{padding:10px 11px}
+}
+@media print{
+ .top,.banner,.noprint,.nav,.toast,.scrim,.drawer{display:none!important}
+ body{background:#fff}main{padding:0}.card{box-shadow:none;break-inside:avoid}.hero,.grid2{break-inside:avoid}
+ .printhead{display:flex!important}
+}
+.printhead{display:none;align-items:center;gap:12px;margin-bottom:12px;border-bottom:2px solid var(--blue);padding-bottom:8px}
+</style>
+<!--SNAPSHOT-->
+</head>
+<body>
+<div id="app"></div>
+<div id="layer"></div>
+<script id="seed" type="application/json">{"workstreams":[{"code":"PRO","label":"Programme scope"},{"code":"FIC","label":"FI / CO"},{"code":"MMP","label":"MM / Procurement"},{"code":"SEC","label":"Security & Fiori"},{"code":"BAS","label":"Basis / RISE"},{"code":"TES","label":"Testing & defects"},{"code":"MIG","label":"Migration & RICEFW"},{"code":"CUT","label":"Cutover & change"},{"code":"COM","label":"Commercial & restart"}],"questions":[{"id":"PRO-001","ws":"PRO","orig":["PG-01","SD-02"],"pkg":"P1-01","text":"Identify each governing contract, SOW and amendment, its signed date and version."},{"id":"PRO-002","ws":"PRO","orig":["SD-02"],"pkg":"P1-01","text":"List every contracted deliverable with contractual acceptance criteria and responsible party."},{"id":"PRO-003","ws":"PRO","orig":["SD-01","SD-02"],"pkg":"P1-03","text":"For each process or module, state approved in-scope, excluded or deferred status and source approval."},{"id":"PRO-004","ws":"PRO","orig":["PG-02"],"pkg":"P1-02","text":"Identify the first approved integrated schedule and its baseline approval date."},{"id":"PRO-005","ws":"PRO","orig":["PG-02"],"pkg":"P1-02","text":"Identify every approved rebaseline, reason, effective date and authorizing party."},{"id":"PRO-006","ws":"PRO","orig":["PG-02","SD-03"],"pkg":"P1-02","text":"State planned, last reported and evidenced actual date for each milestone at suspension."},{"id":"PRO-007","ws":"PRO","orig":["PG-02"],"pkg":"P1-02","text":"Identify activities on the last known critical path and their predecessor and successor dependencies."},{"id":"PRO-008","ws":"PRO","orig":["PG-04"],"pkg":"P1-05","text":"List steering meetings held, decisions approved and unresolved sponsor decisions with dates."},{"id":"PRO-009","ws":"PRO","orig":["PG-05"],"pkg":"P1-05","text":"List open risks, issues, assumptions and dependencies with owner, severity and last update."},{"id":"PRO-010","ws":"PRO","orig":["PG-06"],"pkg":"P1-05","text":"List each scope or schedule change request, approved/rejected status and impact assessment."},{"id":"PRO-011","ws":"PRO","orig":["PG-07","QA-02"],"pkg":"P1-05","text":"For every reported completion claim, identify the deliverable, reporting date and original source supporting it."},{"id":"PRO-012","ws":"PRO","orig":["PG-03","PG-08","QA-03"],"pkg":"P1-05","text":"Name the last responsible workstream owner and current archive custodian for each delivery area."},{"id":"PRO-013","ws":"PRO","orig":["SD-08"],"pkg":"P1-04","text":"Identify solution-design or configuration decisions made verbally and contemporaneous records corroborating them."},{"id":"PRO-014","ws":"PRO","orig":["PG-04","QA-06"],"pkg":"P1-05","text":"List outstanding client decisions and their documented impact on ITGEST activities."},{"id":"PRO-015","ws":"PRO","orig":["QA-02","QA-05"],"pkg":"P1-05","text":"Identify formally accepted, conditionally accepted and rejected deliverables by signer and date."},{"id":"FIC-001","ws":"FIC","orig":["FI-01"],"pkg":"P1-03","text":"State approved FI organizational units, company codes and ledgers in scope."},{"id":"FIC-002","ws":"FIC","orig":["FI-01"],"pkg":"P1-03","text":"State approved CO organizational structure and processes in scope."},{"id":"FIC-003","ws":"FIC","orig":["FI-02"],"pkg":"P1-04","text":"Identify approved chart of accounts mapping and unresolved GL design decisions."},{"id":"FIC-004","ws":"FIC","orig":["FI-02","SD-08"],"pkg":"P1-04","text":"Identify which GL configuration objects were built and in which client and transport."},{"id":"FIC-005","ws":"FIC","orig":["FI-03"],"pkg":"P1-04","text":"Identify required financial statements and statutory or management reports and their completion state."},{"id":"FIC-006","ws":"FIC","orig":["FI-04"],"pkg":"P1-04","text":"Identify cost and profit centre design, allocation and settlement requirements and build status."},{"id":"FIC-007","ws":"FIC","orig":["FI-05"],"pkg":"P1-04","text":"Identify asset accounting design, depreciation keys and migration readiness."},{"id":"FIC-008","ws":"FIC","orig":["FI-06"],"pkg":"P1-04","text":"Identify AP process design, vendor payments, approval and tax requirements and build status."},{"id":"FIC-009","ws":"FIC","orig":["FI-06"],"pkg":"P1-04","text":"Identify AR billing, receivables, collections and credit processes and build status."},{"id":"FIC-010","ws":"FIC","orig":["FI-01","TS-02"],"pkg":"P1-06","text":"Identify each FI/CO SIT scenario executed and the actual outcome, date and script result."},{"id":"FIC-011","ws":"FIC","orig":["FI-01","TS-03"],"pkg":"P1-06","text":"Identify each FI/CO UAT scenario executed and business approval or rejection."},{"id":"FIC-012","ws":"FIC","orig":["FI-01","TS-05"],"pkg":"P1-07","text":"List FI/CO defects open, deferred, retested and accepted with severity and evidence."},{"id":"FIC-013","ws":"FIC","orig":["FI-02","DM-04"],"pkg":"P1-10","text":"Provide GL and opening balance reconciliation results, variances and approval."},{"id":"FIC-014","ws":"FIC","orig":["FI-05","DM-04"],"pkg":"P1-10","text":"Provide asset balance and depreciation migration reconciliation and open differences."},{"id":"FIC-015","ws":"FIC","orig":["FI-06","MM-02"],"pkg":"P1-06","text":"Identify MM–FI integration tested, including GR/IR and invoice verification, with result."},{"id":"FIC-016","ws":"FIC","orig":["FI-01","QA-02"],"pkg":"P1-04","text":"Identify FI/CO deliverables accepted, partially accepted and outstanding, with sign-off."},{"id":"FIC-017","ws":"FIC","orig":["FI-01","PG-05"],"pkg":"P1-05","text":"Estimate remaining FI/CO activities by skill, dependency and effort basis."},{"id":"MMP-001","ws":"MMP","orig":["MM-01"],"pkg":"P1-03","text":"Identify approved procurement, inventory and master-data processes in scope."},{"id":"MMP-002","ws":"MMP","orig":["MM-01","MM-05"],"pkg":"P1-03","text":"Identify warehouse functions in scope and explicitly identify excluded or deferred functions."},{"id":"MMP-003","ws":"MMP","orig":["MM-02"],"pkg":"P1-04","text":"Provide approved requisition-to-purchase-order design and approval levels."},{"id":"MMP-004","ws":"MMP","orig":["MM-02"],"pkg":"P1-04","text":"Provide approved purchase-order change, goods receipt, returns and invoice verification design."},{"id":"MMP-005","ws":"MMP","orig":["MM-02","SD-08"],"pkg":"P1-08","text":"Identify release strategy and workflow configuration by environment and transport."},{"id":"MMP-006","ws":"MMP","orig":["MM-03"],"pkg":"P1-04","text":"Identify material types, number ranges, valuation and required master fields."},{"id":"MMP-007","ws":"MMP","orig":["MM-04"],"pkg":"P1-04","text":"Identify supplier/business-partner design, onboarding and duplicate controls."},{"id":"MMP-008","ws":"MMP","orig":["MM-05"],"pkg":"P1-04","text":"Identify inventory movement, physical count and valuation processes built."},{"id":"MMP-009","ws":"MMP","orig":["MM-01","TS-02"],"pkg":"P1-06","text":"Identify MM/Procurement SIT scripts executed, outcomes and unresolved gaps."},{"id":"MMP-010","ws":"MMP","orig":["MM-01","TS-03"],"pkg":"P1-06","text":"Identify MM/Procurement UAT scripts, business approvals and nonexecuted scenarios."},{"id":"MMP-011","ws":"MMP","orig":["MM-01","TS-05"],"pkg":"P1-07","text":"List purchasing and inventory defects, severity, owners and retest outcome."},{"id":"MMP-012","ws":"MMP","orig":["MM-03","DM-04"],"pkg":"P1-10","text":"Provide material master load counts, rejects and reconciliation evidence."},{"id":"MMP-013","ws":"MMP","orig":["MM-04","DM-04"],"pkg":"P1-10","text":"Provide supplier/business-partner load counts, duplicates and reconciliation evidence."},{"id":"MMP-014","ws":"MMP","orig":["MM-05","DM-04"],"pkg":"P1-10","text":"Provide stock quantity and value reconciliation, differences and approval."},{"id":"MMP-015","ws":"MMP","orig":["MM-02","FI-06"],"pkg":"P1-06","text":"Show end-to-end P2P-to-FI postings, GR/IR and invoice tests."},{"id":"MMP-016","ws":"MMP","orig":["MM-01","QA-02"],"pkg":"P1-04","text":"Identify accepted MM deliverables and unfinished activities with owner and estimate."},{"id":"MMP-017","ws":"MMP","orig":["MM-01"],"pkg":"P1-03","text":"Identify Plant Maintenance dependencies only; label implementation status as outside this D1 specialist review."},{"id":"SEC-001","ws":"SEC","orig":["SEC-01"],"pkg":"P1-09","text":"Identify approved role architecture and security design version, owner and approval."},{"id":"SEC-002","ws":"SEC","orig":["SEC-02"],"pkg":"P1-09","text":"Provide role catalogue and mapping of roles to approved jobs or business functions."},{"id":"SEC-003","ws":"SEC","orig":["SEC-01","SEC-04"],"pkg":"P1-09","text":"Map Fiori business roles to catalogs, spaces/pages and back-end authorization roles."},{"id":"SEC-004","ws":"SEC","orig":["SEC-06"],"pkg":"P1-09","text":"Provide dated user, role and critical-authorization assignments for every relevant client."},{"id":"SEC-005","ws":"SEC","orig":["SEC-06"],"pkg":"P1-09","text":"Identify dormant, generic, service, technical and privileged user populations."},{"id":"SEC-006","ws":"SEC","orig":["SEC-05"],"pkg":"P1-09","text":"Identify emergency access process actually operated and supporting approval/use logs."},{"id":"SEC-007","ws":"SEC","orig":["SEC-03"],"pkg":"P1-09","text":"Provide SoD rules or manual conflict matrix actually used; state if none was adopted."},{"id":"SEC-008","ws":"SEC","orig":["SEC-03","SEC-06"],"pkg":"P1-09","text":"Provide latest conflict/critical access results and documented mitigations, if available."},{"id":"SEC-009","ws":"SEC","orig":["SEC-01"],"pkg":"P1-09","text":"Identify access provisioning, changes, periodic review and leaver approval procedures."},{"id":"SEC-010","ws":"SEC","orig":["SEC-04","TS-02"],"pkg":"P1-06","text":"Provide tested Fiori navigation and authorization scenarios and their observed results."},{"id":"SEC-011","ws":"SEC","orig":["SEC-01","TS-03"],"pkg":"P1-06","text":"Provide business security UAT sign-off or documented rejection."},{"id":"SEC-012","ws":"SEC","orig":["SEC-01","TS-05"],"pkg":"P1-07","text":"List unresolved access defects and whether workaround or retest was accepted."},{"id":"SEC-013","ws":"SEC","orig":["SEC-01","QA-02"],"pkg":"P1-09","text":"Identify security artifacts approved for production and decisions still pending."},{"id":"SEC-014","ws":"SEC","orig":["SEC-03","SEC-05"],"pkg":"P1-09","text":"Confirm whether a GRC application module was implemented; if not, identify security evidence outside GRC only."},{"id":"BAS-001","ws":"BAS","orig":["BT-01"],"pkg":"P1-08","text":"Provide RISE service description, service ownership and ITGEST/GE Petrol/SAP responsibility boundaries."},{"id":"BAS-002","ws":"BAS","orig":["BT-02"],"pkg":"P1-08","text":"List environments, clients, versions and dates provisioned, including current custodians."},{"id":"BAS-003","ws":"BAS","orig":["BT-02","SD-04"],"pkg":"P1-04","text":"Identify differences between approved landscape architecture and last known state."},{"id":"BAS-004","ws":"BAS","orig":["BT-03"],"pkg":"P1-08","text":"Provide transport routes, approval process, import histories and outstanding transports."},{"id":"BAS-005","ws":"BAS","orig":["BT-03"],"pkg":"P1-08","text":"Identify transports imported into test but not production, and failed or reversed imports."},{"id":"BAS-006","ws":"BAS","orig":["BT-04","SD-05"],"pkg":"P1-08","text":"List all interfaces, owners, endpoints, protocols, last tested date and test outcome."},{"id":"BAS-007","ws":"BAS","orig":["BT-04"],"pkg":"P1-08","text":"List batch jobs, scheduling dependencies, monitoring alerts and unresolved failures."},{"id":"BAS-008","ws":"BAS","orig":["BT-01","BT-04"],"pkg":"P1-08","text":"Identify backup, restore and recovery procedures and last evidenced test."},{"id":"BAS-009","ws":"BAS","orig":["BT-01","BT-04"],"pkg":"P1-08","text":"Identify technical access, certificate, connectivity and support constraints affecting restart."},{"id":"BAS-010","ws":"BAS","orig":["BT-04","TS-02"],"pkg":"P1-06","text":"Provide technical integration SIT evidence and open technical defects."},{"id":"BAS-011","ws":"BAS","orig":["BT-05"],"pkg":"P1-12","text":"Identify landscape readiness for cutover including environments, downtime and fallback."},{"id":"BAS-012","ws":"BAS","orig":["BT-02"],"pkg":"P1-08","text":"Identify read-only extracts or technical exports GE Petrol may obtain directly and the custodian."},{"id":"TES-001","ws":"TES","orig":["TS-01"],"pkg":"P1-06","text":"Provide approved test strategy, entry/exit criteria, business roles and test environments."},{"id":"TES-002","ws":"TES","orig":["TS-01"],"pkg":"P1-06","text":"Provide test inventory by scenario with planned, executed, passed, failed and blocked counts."},{"id":"TES-003","ws":"TES","orig":["TS-02"],"pkg":"P1-06","text":"List SIT cycles, execution dates and script-level source evidence."},{"id":"TES-004","ws":"TES","orig":["TS-03"],"pkg":"P1-06","text":"List UAT cycles, execution dates, business signatories and exceptions."},{"id":"TES-005","ws":"TES","orig":["TS-04"],"pkg":"P1-06","text":"Identify negative, security, integration and regression scenarios never executed."},{"id":"TES-006","ws":"TES","orig":["TS-04"],"pkg":"P1-06","text":"Identify negative, security, integration and regression scenarios that failed."},{"id":"TES-007","ws":"TES","orig":["TS-05"],"pkg":"P1-07","text":"Provide complete defect export with ID, module, severity, owner, state and age."},{"id":"TES-008","ws":"TES","orig":["TS-05"],"pkg":"P1-07","text":"Identify defects marked closed without retest evidence or business acceptance."},{"id":"TES-009","ws":"TES","orig":["TS-05"],"pkg":"P1-07","text":"Identify open severe defects, workaround, dependency and restart impact."},{"id":"TES-010","ws":"TES","orig":["TS-01","QA-05"],"pkg":"P1-06","text":"Identify formal gate approvals, waivers and exit criteria not met."},{"id":"TES-011","ws":"TES","orig":["TS-02","TS-03"],"pkg":"P1-06","text":"Reconcile claimed test totals in status reports to execution-level test records."},{"id":"MIG-001","ws":"MIG","orig":["DM-01"],"pkg":"P1-10","text":"Provide approved migration plan, object ownership and load sequence."},{"id":"MIG-002","ws":"MIG","orig":["DM-02"],"pkg":"P1-10","text":"List every in-scope migration object, source system and estimated record count."},{"id":"MIG-003","ws":"MIG","orig":["DM-03"],"pkg":"P1-10","text":"Provide each source-to-target map, transformation rule and approval date."},{"id":"MIG-004","ws":"MIG","orig":["DM-04"],"pkg":"P1-10","text":"Identify load cycle dates, environment and object-level records selected, loaded and rejected."},{"id":"MIG-005","ws":"MIG","orig":["DM-04"],"pkg":"P1-10","text":"Provide reconciliation totals by object and unresolved quantitative differences."},{"id":"MIG-006","ws":"MIG","orig":["DM-04"],"pkg":"P1-10","text":"Identify business sign-off or waivers for reconciliation exceptions."},{"id":"MIG-007","ws":"MIG","orig":["SD-07"],"pkg":"P1-11","text":"List every RICEFW object, classification, owner and contractual scope reference."},{"id":"MIG-008","ws":"MIG","orig":["SD-07"],"pkg":"P1-11","text":"Provide RICEFW build, unit-test, SIT, transport and defect status for each object."},{"id":"MIG-009","ws":"MIG","orig":["QA-04"],"pkg":"P1-11","text":"Provide signed RICEFW Quality Attestation, signer, date and scope covered."},{"id":"MIG-010","ws":"MIG","orig":["QA-04"],"pkg":"P1-11","text":"If attestation is absent, identify why, custodian and whether it can be validly completed."},{"id":"CUT-001","ws":"CUT","orig":["BT-05"],"pkg":"P1-12","text":"Provide approved cutover schedule, task owner, duration, predecessor and exit evidence."},{"id":"CUT-002","ws":"CUT","orig":["BT-05"],"pkg":"P1-12","text":"Identify rehearsals completed and deviations from planned sequence."},{"id":"CUT-003","ws":"CUT","orig":["BT-05"],"pkg":"P1-12","text":"Provide approved go/no-go decision criteria, signatories and unresolved conditions."},{"id":"CUT-004","ws":"CUT","orig":["BT-05"],"pkg":"P1-12","text":"Provide fallback/rollback method, decision threshold and test evidence."},{"id":"CUT-005","ws":"CUT","orig":["OCM-01"],"pkg":"P1-12","text":"Identify business readiness workstreams and latest assessed status."},{"id":"CUT-006","ws":"CUT","orig":["OCM-02"],"pkg":"P1-12","text":"Provide target user population, training curriculum, attendance and competency results."},{"id":"CUT-007","ws":"CUT","orig":["OCM-03"],"pkg":"P1-12","text":"Provide SOP and job-aid inventory, owners and final approval status."},{"id":"CUT-008","ws":"CUT","orig":["OCM-03"],"pkg":"P1-12","text":"Identify day-one business support, escalation and hypercare arrangements."},{"id":"CUT-009","ws":"CUT","orig":["PG-05","OCM-01"],"pkg":"P1-12","text":"List client-owned change/readiness blockers and written decisions required."},{"id":"COM-001","ws":"COM","orig":["PG-02","PG-07"],"pkg":"P1-02","text":"State date, authority and communicated reason for suspension and last work performed."},{"id":"COM-002","ws":"COM","orig":["PG-08","QA-03"],"pkg":"P1-05","text":"List ITGEST resources withdrawn, handover artifacts and current archive custodians."},{"id":"COM-003","ws":"COM","orig":["PG-07"],"pkg":"P1-05","text":"Identify project actions occurring during four-month absence and sources for them."},{"id":"COM-004","ws":"COM","orig":["QA-02"],"pkg":"P1-01","text":"Map ITGEST invoices or claims to approved milestones and accepted deliverables."},{"id":"COM-005","ws":"COM","orig":["PG-06"],"pkg":"P1-05","text":"Identify approved and unapproved variations, disputed amounts and commitments."},{"id":"COM-006","ws":"COM","orig":["PG-02","PG-05"],"pkg":"P1-02","text":"Estimate remaining work by activity, skill, person-days and basis of estimate."},{"id":"COM-007","ws":"COM","orig":["PG-02","PG-05"],"pkg":"P1-02","text":"Estimate elapsed duration after restart with dependencies and critical-path assumptions."},{"id":"COM-008","ws":"COM","orig":["PG-05","QA-06"],"pkg":"P1-05","text":"For each blocker identify documented cause: ITGEST/client/third party/change/joint/unknown."},{"id":"COM-009","ws":"COM","orig":["PG-03","BT-05"],"pkg":"P1-12","text":"Identify minimum pre-restart conditions, responsible party and proof required."},{"id":"COM-010","ws":"COM","orig":["QA-06"],"pkg":"P1-05","text":"List pending sponsor decisions, owner, deadline and consequences of no decision."},{"id":"COM-011","ws":"COM","orig":["QA-07"],"pkg":"P1-05","text":"Identify missing archives, files, environments or licenses at risk of loss."},{"id":"COM-012","ws":"COM","orig":["QA-01","QA-05"],"pkg":"P1-05","text":"Identify quality assurance findings previously raised and disposition/evidence."}],"requests":[{"id":"PG-01","title":"Project Charter / Programme Mandate","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"Programme governance","due":"Week 1","phase":"Phase 0"},{"id":"PG-02","title":"Programme Plan / Master Project Schedule (MS Project or equivalent)","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"Programme governance","due":"Week 1","phase":"Phase 0"},{"id":"PG-03","title":"Programme Governance Framework / RACI","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"Programme governance","due":"Week 1","phase":"Phase 0/1"},{"id":"PG-04","title":"Steering Committee Terms of Reference & Minutes (to date)","priority":"High","from":"GE Petrol SA / IP","owner":"Joint","cat":"Programme governance","due":"Week 1","phase":"Phase 0"},{"id":"PG-05","title":"RAID Log (Risks, Assumptions, Issues, Dependencies) - current","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"Programme governance","due":"Week 1","phase":"Phase 0"},{"id":"PG-06","title":"Change Control Register / Change Request Log (to date)","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"Programme governance","due":"Week 2","phase":"Phase 0"},{"id":"PG-07","title":"Programme Status Reports - last three reporting periods","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"Programme governance","due":"Week 1","phase":"Phase 0"},{"id":"PG-08","title":"Workstream Lead List with contact details and areas of responsibility","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"Programme governance","due":"Week 1","phase":"Phase 0/1"},{"id":"SD-01","title":"Fit/Gap Analysis Report or Solution Design Summary","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"Scope & solution design","due":"Week 1","phase":"Phase 0"},{"id":"SD-02","title":"Scope Definition Document / Statement of Work (IP engagement scope)","priority":"Critical","from":"GE Petrol SA","owner":"GE Petrol","cat":"Scope & solution design","due":"Week 1","phase":"Phase 0"},{"id":"SD-03","title":"SAP Activate Roadmap / Phase Plan with deliverable milestones","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"Scope & solution design","due":"Week 1","phase":"Phase 0"},{"id":"SD-04","title":"System Architecture Overview / Solution Architecture Document","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"Scope & solution design","due":"Week 2","phase":"Phase 0"},{"id":"SD-05","title":"Integration Landscape Document / Interface Inventory","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"Scope & solution design","due":"Week 2","phase":"Phase 0"},{"id":"SD-06","title":"Data Migration Strategy / Data Migration Plan","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"Scope & solution design","due":"Week 2","phase":"Phase 0"},{"id":"SD-07","title":"RICEFW Inventory / Custom Development Register","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"Scope & solution design","due":"Week 2","phase":"Phase 0"},{"id":"SD-08","title":"Configuration Workbooks / BBP Documents completed to date","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"Scope & solution design","due":"Week 2","phase":"Phase 0"},{"id":"FI-01","title":"FI/CO Scope Confirmation Document / Process List","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"FI/CO","due":"Week 2","phase":"Phase 0"},{"id":"FI-02","title":"Chart of Accounts Design / GL Account Structure","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"FI/CO","due":"Week 2","phase":"Phase 0"},{"id":"FI-03","title":"Financial Reporting Requirements Document","priority":"High","from":"GE Petrol SA / IP","owner":"Joint","cat":"FI/CO","due":"Week 2","phase":"Phase 0"},{"id":"FI-04","title":"Controlling / Cost Centre / Profit Centre Design","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"FI/CO","due":"Week 2","phase":"Phase 0"},{"id":"FI-05","title":"Asset Accounting Design Document","priority":"Medium","from":"Implementation Partner","owner":"ITGEST","cat":"FI/CO","due":"Week 2","phase":"Phase 0"},{"id":"FI-06","title":"Accounts Payable / Accounts Receivable Process Design","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"FI/CO","due":"Week 2","phase":"Phase 0"},{"id":"MM-01","title":"MM/Procurement Scope Confirmation Document / Process List","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"MM / Procurement","due":"Week 2","phase":"Phase 0"},{"id":"MM-02","title":"Procurement Process Design Document (P2P flow)","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"MM / Procurement","due":"Week 2","phase":"Phase 0"},{"id":"MM-03","title":"Material Master Design / Material Type Configuration","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"MM / Procurement","due":"Week 2","phase":"Phase 0"},{"id":"MM-04","title":"Vendor Master / Business Partner Design","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"MM / Procurement","due":"Week 2","phase":"Phase 0"},{"id":"MM-05","title":"Inventory Management / Warehouse Design (if in scope)","priority":"Medium","from":"Implementation Partner","owner":"ITGEST","cat":"MM / Procurement","due":"Week 2","phase":"Phase 0"},{"id":"SEC-01","title":"SAP Security Design / Role Architecture","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"SAP security","due":"Week 1","phase":"Phase 0"},{"id":"SEC-02","title":"Role Catalogue / Role-to-Job Mapping","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"SAP security","due":"Week 1","phase":"Phase 0"},{"id":"SEC-03","title":"Segregation of Duties (SoD) Ruleset / Conflict Matrix","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"SAP security","due":"Week 1","phase":"Phase 0"},{"id":"SEC-04","title":"Fiori Security / Catalog / Space / Page Design","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"SAP security","due":"Week 2","phase":"Phase 0"},{"id":"SEC-05","title":"Privileged / Emergency Access Design and Process","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"SAP security","due":"Week 2","phase":"Phase 0"},{"id":"SEC-06","title":"Current User / Role Assignment Extract and Critical Access Population","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"SAP security","due":"Week 2","phase":"Phase 0"},{"id":"BT-01","title":"SAP RISE Contract / Service Description relevant to technical scope","priority":"Critical","from":"GE Petrol SA","owner":"GE Petrol","cat":"Basis / RISE technical","due":"Week 1","phase":"Phase 0"},{"id":"BT-02","title":"S/4HANA RISE Landscape / Environment Design","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"Basis / RISE technical","due":"Week 2","phase":"Phase 0"},{"id":"BT-03","title":"Transport Management Strategy / Transport Route Design","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"Basis / RISE technical","due":"Week 2","phase":"Phase 0"},{"id":"BT-04","title":"Interface / Batch Job / Technical Operations Inventory","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"Basis / RISE technical","due":"Week 2","phase":"Phase 0"},{"id":"BT-05","title":"Cutover Strategy / Cutover Plan / Go-Live Readiness Plan","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"Basis / RISE technical","due":"Week 2","phase":"Phase 0"},{"id":"TS-01","title":"Test Strategy / Test Plan","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"Testing","due":"Week 2","phase":"Phase 0"},{"id":"TS-02","title":"SIT Test Inventory, Scripts and Results to Date","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"Testing","due":"Week 2","phase":"Phase 0"},{"id":"TS-03","title":"UAT Test Inventory, Scripts and Results / Sign-offs to Date","priority":"Critical","from":"Implementation Partner / GE Petrol SA","owner":"Joint","cat":"Testing","due":"Week 2","phase":"Phase 0"},{"id":"TS-04","title":"Regression / Negative / Exception Test Evidence","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"Testing","due":"Week 2","phase":"Phase 0"},{"id":"TS-05","title":"Defect Register / Defect Aging / Retest Status","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"Testing","due":"","phase":""},{"id":"DM-01","title":"Detailed Data Migration Strategy / Plan","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"Data migration","due":"Week 2","phase":"Phase 0"},{"id":"DM-02","title":"Data Migration Object Inventory / Scope","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"Data migration","due":"Week 2","phase":"Phase 0"},{"id":"DM-03","title":"Source-to-Target Mapping / Transformation Rules","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"Data migration","due":"Week 2","phase":"Phase 0"},{"id":"DM-04","title":"Migration Load Results / Reconciliation Evidence","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"Data migration","due":"Week 2","phase":"Phase 0"},{"id":"OCM-01","title":"Business Readiness / Organizational Change Management Plan","priority":"High","from":"GE Petrol SA / IP","owner":"Joint","cat":"OCM","due":"","phase":""},{"id":"OCM-02","title":"Training Strategy / Training Plan / User Population","priority":"High","from":"GE Petrol SA / IP","owner":"Joint","cat":"OCM","due":"","phase":""},{"id":"OCM-03","title":"SOP / Job Aid / Day-1 Process Readiness Evidence","priority":"Medium","from":"GE Petrol SA / IP","owner":"Joint","cat":"OCM","due":"","phase":""},{"id":"QA-01","title":"Existing QA / Quality Management Plan or Quality Reports","priority":"High","from":"Implementation Partner","owner":"ITGEST","cat":"QA & contractual","due":"Week 1","phase":"Phase 0/1"},{"id":"QA-02","title":"Implementation Partner Deliverable Register / Acceptance Status","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"QA & contractual","due":"Week 1","phase":"Phase 0/1"},{"id":"QA-03","title":"Implementation Partner Project Team Structure / Resource Plan","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"QA & contractual","due":"Week 1","phase":"Phase 0/1"},{"id":"QA-04","title":"Signed RICEFW Quality Attestation","priority":"Critical","from":"Implementation Partner","owner":"ITGEST","cat":"QA & contractual","due":"Week 2","phase":"Phase 0"},{"id":"QA-05","title":"Quality Gate / Stage Gate Evidence and Approvals","priority":"High","from":"Implementation Partner / GE Petrol SA","owner":"Joint","cat":"QA & contractual","due":"Week 1","phase":"Phase 0"},{"id":"QA-06","title":"Open Action / Decision / Commitment Register","priority":"Medium","from":"Implementation Partner","owner":"ITGEST","cat":"QA & contractual","due":"Week 1","phase":"Phase 0"},{"id":"QA-07","title":"Other Supporting Evidence Referenced in Status Reports or Meeting Minutes","priority":"Medium","from":"Implementation Partner / GE Petrol SA","owner":"Joint","cat":"QA & contractual","due":"","phase":""}],"packages":[{"id":"P1-01","name":"Contract / SOW / approved scope","ref":"SD-02 + contractual records","reason":"Establish what ITGEST was required to deliver and approved changes.","alt":"Contract, PO, SOW, approved change orders."},{"id":"P1-02","name":"Current integrated project schedule","ref":"PG-02 / SD-03","reason":"Establish milestones, current position, dependencies and remaining work.","alt":"Planning-tool export or reconstructed milestone plan."},{"id":"P1-03","name":"Current scope & process inventory","ref":"SD-01 / FI-01 / MM-01","reason":"Establish processes and solution areas actually in scope.","alt":"Joint signed scope matrix from structured workshop."},{"id":"P1-04","name":"Current solution / design baseline","ref":"SD-01 / SD-08 + domain designs","reason":"Establish intended solution and material design decisions.","alt":"Fit/Gap, BBP/config workbooks, workshop decisions or reconstructed design baseline."},{"id":"P1-05","name":"Current RAID, decisions, actions & changes","ref":"PG-04 to PG-07","reason":"Establish known risks, issues, decisions, scope changes and commitments.","alt":"All minutes/status reports plus reconstructed RAID/decision/change registers."},{"id":"P1-06","name":"Current test inventory & results","ref":"TS-01 to TS-04","reason":"Establish testing scope, execution, outcomes, approvals and gaps.","alt":"Test-tool export, executed scripts, spreadsheets, screenshots and sign-offs."},{"id":"P1-07","name":"Current defect register","ref":"Testing / defect evidence","reason":"Establish open/closed defects, severity, ownership, aging and retest status.","alt":"Jira/ALM/ServiceNow export or reconstructed defect register."},{"id":"P1-08","name":"SAP landscape, configuration & transport evidence","ref":"SD-04 / BT-02 to BT-04","reason":"Establish actual technical state and environment consistency.","alt":"Direct SAP extracts, transport logs, landscape/configuration reports."},{"id":"P1-09","name":"Security / role / user baseline","ref":"SEC-01 to SEC-06","reason":"Establish actual access design, assignments, SoD, privileged access and Fiori alignment.","alt":"SUIM/PFCG role/user/auth exports and standalone SoD analysis."},{"id":"P1-10","name":"Migration inventory & reconciliations","ref":"DM-01 to DM-04","reason":"Establish migration scope, mappings, quality, loads and reconciliation status.","alt":"Migration Cockpit/files, ECC/S4 extracts and reconciliation evidence."},{"id":"P1-11","name":"RICEFW inventory + signed Quality Attestation","ref":"SD-07 / QA-04","reason":"Support agreed RICEFW reliance model and scope boundary.","alt":"Inventory reconstructed/exported if necessary; signed attestation remains required."},{"id":"P1-12","name":"Cutover / Go-Live readiness plan","ref":"BT-05 + readiness evidence","reason":"Establish remaining path to production, dependencies, validation and fallback.","alt":"Reconstructed readiness plan from workshop if no formal plan exists."}]}</script>
+<script>
+'use strict';
+const SRC='<!DOCTYPE html>\n'+document.documentElement.outerHTML;
+const $=(s,r)=>(r||document).querySelector(s);
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const SEED=JSON.parse($('#seed').textContent);
+const snapEl=$('#snapshot-data');const SNAP=snapEl?JSON.parse(snapEl.textContent):null;
+const LOGO='data:image/png;base64,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';
+const LS='kabo_itgest_tracker_v1',SS='kabo_itgest_session_v1';
+const WS=SEED.workstreams;
+const Q=SEED.questions.map(x=>Object.assign({kind:'Q'},x));
+const R=SEED.requests.map(x=>Object.assign({kind:'R'},x));
+const P=SEED.packages.map(x=>Object.assign({kind:'P'},x));
+const ALL=[].concat(P,R,Q);
+const BY={};ALL.forEach(d=>{BY[d.id]=d;});
+const WSL={};WS.forEach(w=>{WSL[w.code]=w.label;});
+const titleOf=d=>d.kind==='Q'?d.text:d.kind==='R'?d.title:d.name;
+const OPT={
+ respQ:['Yes evidenced','Yes unsupported','Partial','No','Unknown after search','N/A with reason'],
+ respR:['A Available','B Exists pending','C Not created/maintained','D Not applicable'],
+ receipt:['Received','Not applicable'],
+ adequacy:['Adequate','Partly adequate','Inadequate'],
+ verified:['Verified','Partially verified','Unverified','Not applicable']
+};
+const STAT={
+ verified:{label:'Verified',desc:'Kabo has verified the evidence as complete'},
+ accepted:{label:'Adequate',desc:'Kabo reviewed it as adequate; verification still to do'},
+ received:{label:'Received',desc:'Received; Kabo review in progress'},
+ followup:{label:'Follow-up',desc:'Received but incomplete or inadequate; follow-up needed'},
+ awaiting:{label:'Awaiting',desc:'Not yet received'},
+ na:{label:'N/A',desc:'Not applicable'}
+};
+const ORDER=['verified','accepted','received','followup','awaiting','na'];
+const FL={resp:'ITGEST response',receipt:'Receipt',received:'Received date',adequacy:'Adequacy',verified:'Verification',evidence:'Evidence ID(s)',link:'SharePoint link',note:'Public note',internal:'Internal note'};
+const BLANK={resp:'not returned',receipt:'Not received',adequacy:'Not assessed',verified:'Not yet'};
+
+/* ---------- helpers ---------- */
+const pad2=n=>('0'+n).slice(-2);
+const isoDate=d=>d.getFullYear()+'-'+pad2(d.getMonth()+1)+'-'+pad2(d.getDate());
+const today=()=>isoDate(new Date());
+const parseD=s=>{const m=/^(\d{4})-(\d\d)-(\d\d)/.exec(s||'');return m?new Date(+m[1],+m[2]-1,+m[3]):null;};
+const fmtD=s=>{const d=parseD(s);return d?d.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}):'—';};
+const fmtS=s=>{const d=parseD(s);return d?d.toLocaleDateString('en-GB',{day:'numeric',month:'short'}):'—';};
+const fmtDT=iso=>{const d=new Date(iso);return isNaN(d)?'—':d.toLocaleDateString('en-GB',{day:'numeric',month:'short'})+' '+pad2(d.getHours())+':'+pad2(d.getMinutes());};
+const daysTo=s=>{const d=parseD(s);if(!d)return null;const t=new Date();t.setHours(0,0,0,0);return Math.round((d-t)/864e5);};
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,7);
+const okUrl=u=>/^https?:\/\//i.test(u||'');
+const cut=(s,n)=>{s=String(s||'');return s.length>n?s.slice(0,n-1)+'…':s;};
+
+/* ---------- state ---------- */
+const blankItem=()=>({resp:'',receipt:'',received:'',adequacy:'',verified:'',evidence:'',link:'',note:'',internal:'',updated:'',by:''});
+function fresh(){const items={};ALL.forEach(d=>{items[d.id]=blankItem();});return{v:1,items,log:[],demo:false,config:{coordinator:'',coordEmail:'',sponsor:'',repo:'',coordDue:'',returnDue:'',cutoff:''}};}
+function load(){
+ if(SNAP)return SNAP.state;
+ try{const s=localStorage.getItem(LS);if(s){const o=JSON.parse(s);ALL.forEach(d=>{if(!o.items[d.id])o.items[d.id]=blankItem();});o.log=o.log||[];o.config=Object.assign(fresh().config,o.config||{});return o;}}catch(e){}
+ return fresh();
+}
+let st=load();
+let sess={role:'viewer',name:''};
+try{const s=JSON.parse(sessionStorage.getItem(SS)||'null');if(s&&s.role==='editor'&&!SNAP)sess=s;}catch(e){}
+const isEd=()=>!SNAP&&sess.role==='editor';
+function save(){if(SNAP)return;try{localStorage.setItem(LS,JSON.stringify(st));}catch(e){toast('Could not save in this browser. Export a backup now (Settings).');}}
+
+const ui={view:'dashboard',tab:'Q',f:{q:'',ws:'',status:'',owner:'',pri:''},sel:new Set(),drawer:null,modal:null,act:'all'};
+const QL={ids:[],receipt:'Received',date:'',adequacy:'',verified:'',link:'',evidence:'',note:'',msg:''};
+
+/* ---------- status logic ---------- */
+function statusOf(it){
+ if(it.receipt==='Not applicable')return'na';
+ if(it.verified==='Verified')return'verified';
+ if(it.receipt==='Received'){
+  if(it.adequacy==='Inadequate'||it.adequacy==='Partly adequate'||it.verified==='Partially verified'||it.verified==='Unverified')return'followup';
+  if(it.adequacy==='Adequate')return'accepted';
+  return'received';
+ }
+ return'awaiting';
+}
+const isRecd=s=>s==='received'||s==='accepted'||s==='followup'||s==='verified';
+function metrics(defs){
+ const c={awaiting:0,received:0,accepted:0,followup:0,verified:0,na:0};
+ defs.forEach(d=>{c[statusOf(st.items[d.id])]++;});
+ const total=defs.length,app=total-c.na,recd=c.received+c.accepted+c.followup+c.verified;
+ return{c,total,app,recd,ver:c.verified,pct:app?Math.round(recd/app*100):0};
+}
+const badge=s=>`<span class="badge b-${s}" title="${esc(STAT[s].desc)}"><i></i>${STAT[s].label}</span>`;
+
+/* ---------- changes, log, undo ---------- */
+function applyChanges(ids,patch,label){
+ const ts=new Date().toISOString(),changes=[];
+ ids.forEach(id=>{
+  const it=st.items[id];if(!it)return;const p=Object.assign({},patch);
+  if(p.receipt==='Received'&&p.received===undefined&&!it.received)p.received=today();
+  let ch=false;
+  Object.keys(p).forEach(f=>{const nv=p[f]==null?'':String(p[f]);if((it[f]||'')!==nv){changes.push({id,f,from:it[f]||'',to:nv});it[f]=nv;ch=true;}});
+  if(ch){it.updated=ts;it.by=sess.name||'Kabo';}
+ });
+ if(!changes.length)return null;
+ const e={id:uid(),ts,by:sess.name||'Kabo',label,ids:Array.from(new Set(changes.map(c=>c.id))),changes};
+ st.log.unshift(e);if(st.log.length>3000)st.log.length=3000;save();return e;
+}
+function undo(e){
+ const ts=new Date().toISOString(),ch=[];
+ e.changes.slice().reverse().forEach(c=>{const it=st.items[c.id];ch.push({id:c.id,f:c.f,from:it[c.f]||'',to:c.from});it[c.f]=c.from;it.updated=ts;it.by=sess.name||'Kabo';});
+ st.log.unshift({id:uid(),ts,by:sess.name||'Kabo',label:'Undo: '+e.label,ids:Array.from(new Set(ch.map(c=>c.id))),changes:ch});
+ save();render();
+}
+function summarize(e,onlyId){
+ const grp={},extra=new Set(),lab={resp:'ITGEST response',receipt:'Receipt',adequacy:'Adequacy',verified:'Verification'};
+ (e.changes||[]).forEach(c=>{
+  if(onlyId&&c.id!==onlyId)return;
+  if(lab[c.f]){const k=c.f+'\u0001'+c.to;(grp[k]=grp[k]||[]).push(c.id);}
+  else if(c.f==='link')extra.add('SharePoint link');else if(c.f==='evidence')extra.add('evidence IDs');
+  else if(c.f==='note')extra.add('note');else if(c.f==='received')extra.add('received date');
+ });
+ const parts=Object.keys(grp).map(k=>{const a=k.split('\u0001'),ids=grp[k];return`${lab[a[0]]} → ${a[1]||BLANK[a[0]]}: ${ids.slice(0,4).join(', ')}${ids.length>4?' +'+(ids.length-4)+' more':''}`;});
+ if(extra.size)parts.push('also updated: '+Array.from(extra).join(', '));
+ if(!parts.length&&!(e.changes||[]).length)return e.label||'';
+ return parts.join(' · ');
+}
+let toastT=null;
+function toast(msg,entry){
+ let t=$('#toast');if(t)t.remove();
+ t=document.createElement('div');t.id='toast';t.className='toast';t.innerHTML=`<span>${esc(msg)}</span>${entry?'<button data-act="undo">Undo</button>':''}`;
+ document.body.appendChild(t);t._e=entry;clearTimeout(toastT);toastT=setTimeout(()=>{const x=$('#toast');if(x)x.remove();},entry?9000:4500);
+}
+
+/* ---------- field editing ---------- */
+function setField(id,f,v){
+ const e=applyChanges([id],{[f]:v},'Updated '+id);
+ if(e)toast(`${id}: ${FL[f]} → ${v||BLANK[f]||'cleared'}`,e);
+ render();
+}
+function bulk(patch,label){
+ const ids=Array.from(ui.sel);if(!ids.length)return;
+ const e=applyChanges(ids,patch,label||'Bulk update');
+ if(e)toast(`Updated ${e.ids.length} item${e.ids.length===1?'':'s'}`,e);else toast('Nothing to change');
+ ui.sel.clear();render();
+}
+
+/* ---------- html builders ---------- */
+function selHtml(opts,val,blank,attrs){return`<select class="f-sel" ${attrs}><option value="">${esc(blank)}</option>${opts.map(o=>`<option${o===val?' selected':''}>${esc(o)}</option>`).join('')}</select>`;}
+function respCls(v){if(/^(Yes evidenced|A )/.test(v))return'g';if(/^(Yes unsupported|Partial|B )/.test(v))return'a';if(v==='No'||/^C /.test(v))return'r';return'';}
+function ring(p){const C=163.36,d=(p/100*C).toFixed(1);return`<div class="ring"><svg width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="none" stroke="#E6ECF4" stroke-width="8"/>${p>0?`<circle cx="32" cy="32" r="26" fill="none" stroke="#0B5FA5" stroke-width="8" stroke-linecap="round" stroke-dasharray="${d} ${C}"/>`:''}</svg><span>${p}%</span></div>`;}
+function stack(m){if(!m.total)return'';return`<div class="stack" role="img" aria-label="Status breakdown">${ORDER.map(k=>m.c[k]?`<span class="seg s-${k}" style="width:${(m.c[k]/m.total*100).toFixed(2)}%" title="${STAT[k].label}: ${m.c[k]}"></span>`:'').join('')}</div>`;}
+function legend(){return`<div class="legend">${ORDER.map(k=>`<span title="${esc(STAT[k].desc)}"><i class="s-${k}"></i>${STAT[k].label}</span>`).join('')}</div>`;}
+function dueTxt(d,done){
+ if(!d)return'<span class="tbc">To be confirmed</span>';
+ const n=daysTo(d);let x='';
+ if(done)x='';else if(n<0)x=` <span class="late">${-n} day${n===-1?'':'s'} overdue</span>`;else if(n===0)x=' <span class="soon">due today</span>';else if(n<=2)x=` <span class="soon">in ${n} day${n===1?'':'s'}</span>`;else x=` <span class="sub">in ${n} days</span>`;
+ return fmtD(d)+x;
+}
+function lastUpdate(){return st.log.length?st.log[0]:null;}
+
+/* ---------- shell ---------- */
+function shell(){
+ const ed=isEd();
+ const nav=[['dashboard','Dashboard'],['tracker','Tracker'],ed?['update','Daily update']:null,['activity','Activity'],['help','How it works'],ed?['settings','Settings']:null].filter(Boolean);
+ let ban='';
+ if(SNAP)ban=`<div class="banner snap">Read-only snapshot taken ${fmtDT(SNAP.takenAt)}. Ask Kabo for the latest version.</div>`;
+ else ban=`<div class="banner info">Preview build: entries are saved in this browser only. Shared live access for ITGEST, GE Petrol and Kabo is switched on when the shared database is connected.</div>`;
+ if(st.demo)ban+=`<div class="banner warn"><b>SAMPLE DATA</b>: made-up statuses for previewing the layout. Not real. Remove in Settings → Reset.</div>`;
+ return`<header class="top"><div class="top-in"><a class="brand" href="#/dashboard"><img src="${LOGO}" alt="Kabo"><div><b>Evidence Request Tracker</b><span>GE Petrol · Phase 0 Retrospective Review (D1) · Kabo Solutions</span></div></a>
+ <div class="who noprint">${SNAP?'<span class="role">Viewer (snapshot)</span>':ed?`<span class="role ed">Kabo · ${esc(sess.name)}</span><button class="btn ghost sm" data-act="signout">Sign out</button>`:`<span class="role">Viewer</span><button class="btn ghost sm" data-act="signin">Kabo sign-in</button>`}</div></div>
+ <nav class="nav">${nav.map(n=>`<a href="#/${n[0]}" class="${ui.view===n[0]?'on':''}">${n[1]}</a>`).join('')}</nav></header>${ban}`;
+}
+
+/* ---------- dashboard ---------- */
+function heroCol(title,sub,defs){
+ const m=metrics(defs);
+ return`<div class="hcol"><div class="hc-top">${ring(m.pct)}<div><div class="hc-t">${title}</div><div class="hc-s">${sub}</div></div></div>${stack(m)}
+ <div class="hc-n"><b>${m.recd}</b> of ${m.app} received · <b>${m.ver}</b> verified${m.c.followup?` · <span class="warn">${m.c.followup} need follow-up</span>`:''}</div></div>`;
+}
+function chartRecv(){
+ const pts={};R.forEach(d=>{const it=st.items[d.id];if(isRecd(statusOf(it))&&it.received)pts[it.received]=(pts[it.received]||0)+1;});
+ const days=Object.keys(pts).sort();
+ if(!days.length)return'<div class="empty">Nothing received yet. The chart appears once the first item is logged.</div>';
+ const start=parseD(days[0]),end=new Date();end.setHours(0,0,0,0);if(end<start)end.setTime(start.getTime());
+ const n=Math.max(1,Math.round((end-start)/864e5));let cum=0;const s=[];
+ for(let i=0;i<=n;i++){const k=isoDate(new Date(start.getFullYear(),start.getMonth(),start.getDate()+i));cum+=pts[k]||0;s.push(cum);}
+ const W=Math.max(300,Math.min(1100,window.innerWidth-90)),H=170,L=34,B=24,T=10,Rr=10,mx=Math.max(R.length,cum);
+ const X=i=>L+(W-L-Rr)*i/n,Y=v=>H-B-(H-B-T)*v/mx;
+ const line=s.map((v,i)=>(i?'L':'M')+X(i).toFixed(1)+' '+Y(v).toFixed(1)).join(' ');
+ const area=line+` L${X(n).toFixed(1)} ${Y(0)} L${X(0).toFixed(1)} ${Y(0)} Z`;
+ return`<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Cumulative requests received"><line x1="${L}" y1="${Y(0)}" x2="${W-Rr}" y2="${Y(0)}" stroke="#DCE4EE"/><line x1="${L}" y1="${Y(mx)}" x2="${W-Rr}" y2="${Y(mx)}" stroke="#DCE4EE" stroke-dasharray="4 4"/>
+ <path d="${area}" fill="#0B5FA5" opacity=".12"/><path d="${line}" fill="none" stroke="#0B5FA5" stroke-width="2.5" stroke-linejoin="round"/><circle cx="${X(n)}" cy="${Y(cum)}" r="4" fill="#0B5FA5"/>
+ <text x="${L-6}" y="${Y(0)+4}" text-anchor="end" font-size="11" fill="#5B6B82">0</text><text x="${L-6}" y="${Y(mx)+4}" text-anchor="end" font-size="11" fill="#5B6B82">${mx}</text>
+ <text x="${L}" y="${H-6}" font-size="11" fill="#5B6B82">${fmtD(days[0])}</text><text x="${W-Rr}" y="${H-6}" text-anchor="end" font-size="11" fill="#5B6B82">Today · ${cum} received</text></svg>`;
+}
+function vDash(){
+ const cf=st.config,mQ=metrics(Q),lu=lastUpdate();
+ const anyLogged=ALL.some(d=>statusOf(st.items[d.id])!=='awaiting');
+ const owners=['ITGEST','GE Petrol','Joint'].map(o=>{
+  const defs=R.filter(d=>d.owner===o),m=metrics(defs),crit=defs.filter(d=>d.priority==='Critical'&&statusOf(st.items[d.id])==='awaiting').length;
+  return`<tr><td><b>${o}</b></td><td class="n">${m.total}</td><td class="n">${m.recd}</td><td class="n">${m.c.awaiting}</td><td class="n">${crit?`<span class="warn">${crit}</span>`:'0'}</td></tr>`;
+ }).join('');
+ const crit=R.filter(d=>d.priority==='Critical'&&statusOf(st.items[d.id])==='awaiting').sort((a,b)=>(a.due||'Z').localeCompare(b.due||'Z')||a.id.localeCompare(b.id));
+ const done=!!cf.coordinator;
+ return`<div class="printhead"><img src="${LOGO}" width="36" height="36" alt=""><div><b>GE Petrol · Phase 0 evidence return status</b><div class="sub">Printed ${fmtD(today())} · Kabo Solutions Inc.</div></div></div>
+ <div class="pagehead"><div><h1>Evidence return status</h1><div class="sub">${lu?`Last updated ${fmtDT(lu.ts)} by ${esc(lu.by)}`:'No updates recorded yet'} · maintained daily by Kabo from documents deposited in the project repository</div></div><div class="noprint"><button class="btn ghost" data-act="print">Print summary</button></div></div>
+ <div class="card"><h2>Overall progress</h2>${legend()}${anyLogged?'':'<div class="sub" style="margin-bottom:10px">Nothing has been logged yet. Figures update as Kabo records documents deposited by ITGEST and GE Petrol.</div>'}
+ <div class="hero">${heroCol('Priority packages','The 12 essential evidence packages',P)}${heroCol('Document requests','The 57 originally issued requests',R)}${heroCol('Detailed questions','117 questions across 9 workstreams',Q)}</div>
+ <div class="sub" style="margin-top:10px">“Received” means Kabo has logged a submission. It does not mean the evidence is adequate; Kabo reviews and verifies each item separately.</div></div>
+ <div class="grid2" style="margin-bottom:16px"><div class="card"><h2>Key dates and contacts</h2><dl class="kv">
+  <dt>ITGEST coordinator</dt><dd>${cf.coordinator?esc(cf.coordinator)+(cf.coordEmail?` <span class="sub">${esc(cf.coordEmail)}</span>`:''):'<span class="tbc">To be confirmed</span>'}</dd>
+  <dt>GE Petrol sponsor</dt><dd>${cf.sponsor?esc(cf.sponsor):'<span class="tbc">To be confirmed</span>'}</dd>
+  <dt>Coordinator named by</dt><dd>${dueTxt(cf.coordDue,done)}</dd>
+  <dt>Single return due</dt><dd>${dueTxt(cf.returnDue,mQ.recd>=mQ.app&&mQ.app>0)}</dd>
+  <dt>Evidence cut-off</dt><dd>${cf.cutoff?fmtD(cf.cutoff):'<span class="tbc">To be confirmed</span>'}</dd>
+  <dt>Project repository</dt><dd>${okUrl(cf.repo)?`<a class="btn ghost sm" target="_blank" rel="noopener" href="${esc(cf.repo)}">Open SharePoint repository ↗</a>`:'<span class="tbc">To be confirmed</span>'}</dd></dl></div>
+ <div class="card"><h2>Who is holding what</h2><table class="mini"><thead><tr><th>Owner of the request</th><th class="n">Requests</th><th class="n">Received</th><th class="n">Awaiting</th><th class="n">Critical awaiting</th></tr></thead><tbody>${owners}</tbody></table>
+ <div class="sub" style="margin-top:8px">Based on the 57 document requests. All 117 detailed questions are answered by ITGEST.</div></div></div>
+ <div class="card"><h2>The 12 priority packages</h2><div class="tiles">${P.map(p=>{const it=st.items[p.id],s=statusOf(it);return`<button class="tile t-${s}" data-act="open" data-id="${p.id}"><div class="pid">${p.id}</div><div class="pn">${esc(p.name)}</div>${badge(s)} ${it.resp?`<span class="chip ${respCls(it.resp)}">${esc(it.resp.charAt(0)==='A'||it.resp.charAt(0)==='B'||it.resp.charAt(0)==='C'||it.resp.charAt(0)==='D'?it.resp.charAt(0):it.resp)}</span>`:''}</button>`;}).join('')}</div></div>
+ <div class="card"><h2>Detailed questions by workstream</h2>${WS.map(w=>{const m=metrics(Q.filter(q=>q.ws===w.code));return`<div class="brow" data-act="go" data-tab="Q" data-ws="${w.code}"><div class="bl">${esc(w.label)}</div>${stack(m)}<div class="bn"><b>${m.recd}</b> / ${m.app} · ${m.pct}%</div></div>`;}).join('')}</div>
+ <div class="grid2" style="margin-bottom:16px"><div class="card"><h2>Critical requests still awaiting <span class="chip ${crit.length?'a':'g'}">${crit.length}</span></h2>${crit.length?crit.slice(0,8).map(d=>`<div class="li" data-act="open" data-id="${d.id}"><div class="id">${d.id}</div><div style="flex:1">${esc(d.title)}<div class="sub">${esc(d.owner)}${d.due?' · originally due '+esc(d.due):''}</div></div></div>`).join('')+(crit.length>8?`<div class="sub" style="margin-top:8px"><a href="#/tracker" data-act="go" data-tab="R" data-status="awaiting" data-pri="Critical">See all ${crit.length} →</a></div>`:''):'<div class="empty">No critical requests are awaiting.</div>'}</div>
+ <div class="card"><h2>Recent updates</h2>${recentHtml(6)}</div></div>
+ <div class="card"><h2>Document requests received over time</h2>${chartRecv()}</div>`;
+}
+function recentHtml(n){
+ const list=st.log.map(e=>({e,s:summarize(e)})).filter(x=>x.s).slice(0,n);
+ if(!list.length)return'<div class="empty">No updates yet.</div>';
+ return list.map(x=>`<div class="li"><div class="id" style="min-width:82px;font-weight:600;color:var(--muted)">${fmtDT(x.e.ts)}</div><div style="flex:1">${esc(x.s)}<div class="sub">${esc(x.e.by)}</div></div></div>`).join('');
+}
+
+/* ---------- tracker ---------- */
+function tabDefs(){return ui.tab==='Q'?Q:ui.tab==='R'?R:P;}
+function filtered(){
+ const f=ui.f,term=f.q.trim().toLowerCase();
+ return tabDefs().filter(d=>{
+  const it=st.items[d.id];
+  if(f.ws&&d.ws!==f.ws)return false;if(f.owner&&d.owner!==f.owner)return false;if(f.pri&&d.priority!==f.pri)return false;
+  if(f.status&&statusOf(it)!==f.status)return false;
+  if(term){const h=(d.id+' '+titleOf(d)+' '+(d.orig||[]).join(' ')+' '+(d.pkg||'')+' '+it.note+' '+it.evidence).toLowerCase();if(h.indexOf(term)<0)return false;}
+  return true;
+ });
+}
+function vTracker(){
+ const ed=isEd(),defs=tabDefs(),m=metrics(defs);
+ const chips=[['','All '+m.total]].concat(ORDER.filter(k=>m.c[k]).map(k=>[k,STAT[k].label+' '+m.c[k]]));
+ return`<div class="pagehead"><div><h1>Tracker</h1><div class="sub">${ed?'Change a dropdown to update an item. Click an ID for details, links and notes.':'Click any ID to see its details. Status is maintained by Kabo.'}</div></div>
+ <div class="noprint"><button class="btn ghost sm" data-act="csv">Download CSV</button></div></div>
+ <div class="seg-tabs noprint"><button class="${ui.tab==='Q'?'on':''}" data-act="tab" data-v="Q">Questions (117)</button><button class="${ui.tab==='R'?'on':''}" data-act="tab" data-v="R">Requests (57)</button><button class="${ui.tab==='P'?'on':''}" data-act="tab" data-v="P">Packages (12)</button></div>
+ <div class="filters noprint"><input id="q" type="search" placeholder="Search ID, wording, evidence ID…" value="${esc(ui.f.q)}" aria-label="Search">
+ ${ui.tab==='Q'?`<select data-flt="ws" aria-label="Workstream"><option value="">All workstreams</option>${WS.map(w=>`<option value="${w.code}"${ui.f.ws===w.code?' selected':''}>${esc(w.label)}</option>`).join('')}</select>`:''}
+ ${ui.tab==='R'?`<select data-flt="owner" aria-label="Owner"><option value="">Any owner</option>${['ITGEST','GE Petrol','Joint'].map(o=>`<option${ui.f.owner===o?' selected':''}>${o}</option>`).join('')}</select><select data-flt="pri" aria-label="Priority"><option value="">Any priority</option>${['Critical','High','Medium'].map(o=>`<option${ui.f.pri===o?' selected':''}>${o}</option>`).join('')}</select>`:''}</div>
+ <div class="chips noprint">${chips.map(c=>`<button class="${ui.f.status===c[0]?'on':''}" data-act="status" data-v="${c[0]}">${esc(c[1])}</button>`).join('')}</div>
+ <div id="trk-list">${listHtml()}</div>`;
+}
+function listHtml(){
+ const ed=isEd(),defs=filtered(),tab=ui.tab;
+ if(!defs.length)return'<div class="card empty">No items match these filters.</div>';
+ const allSel=defs.every(d=>ui.sel.has(d.id));
+ const bulkBar=ed?`<div class="bulk noprint"><label><input type="checkbox" id="selall"${allSel?' checked':''}> Select all ${defs.length} shown</label><span>${ui.sel.size} selected</span>
+  <button class="btn sm" data-act="b-recv"${ui.sel.size?'':' disabled'}>Mark received today</button>
+  <select class="f-sel" id="bulk-adq"${ui.sel.size?'':' disabled'}><option value="">Set adequacy…</option>${OPT.adequacy.map(o=>`<option>${o}</option>`).join('')}</select>
+  <select class="f-sel" id="bulk-ver"${ui.sel.size?'':' disabled'}><option value="">Set verification…</option>${OPT.verified.map(o=>`<option>${o}</option>`).join('')}</select>
+  <button class="btn ghost sm" data-act="b-na"${ui.sel.size?'':' disabled'}>Not applicable</button></div>`:'';
+ const th=['',ed?'':null,'ID','Item'].slice(2);
+ const cols=(ed?['','ID',tab==='Q'?'Question':tab==='R'?'Document requested':'Package','ITGEST response','Receipt','Adequacy','Verification','Status','Received','Link']:['ID',tab==='Q'?'Question':tab==='R'?'Document requested':'Package','ITGEST response','Status','Received','Link']);
+ const rows=defs.map(d=>{
+  const it=st.items[d.id],s=statusOf(it),id=`data-id="${d.id}"`;
+  const opts=d.kind==='Q'?OPT.respQ:OPT.respR;
+  const resp=ed?selHtml(opts,it.resp,'— not returned —',`data-chg="resp" ${id}`):(it.resp?`<span class="chip ${respCls(it.resp)}">${esc(it.resp)}</span>`:'<span class="tbc">not returned</span>');
+  const sub=d.kind==='Q'?`${(d.orig||[]).join(' ')} · ${d.pkg}`:d.kind==='R'?esc(d.owner)+(d.priority?' · '+esc(d.priority):''):'';
+  const txt=`<div class="ws">${d.kind==='Q'?esc(WSL[d.ws]):d.kind==='R'?esc(d.cat):esc(d.ref)}</div>${esc(titleOf(d))}`;
+  const link=okUrl(it.link)?`<a href="${esc(it.link)}" target="_blank" rel="noopener">Open ↗</a>`:'<span class="tbc">—</span>';
+  let c='';
+  if(ed)c+=`<td class="chk"><input type="checkbox" data-sel="${d.id}"${ui.sel.has(d.id)?' checked':''} aria-label="Select ${d.id}"></td>`;
+  c+=`<td class="id" data-act="open" ${id}>${d.id}<small>${sub}</small></td><td class="txt" data-act="open" ${id}>${txt}</td><td data-l="ITGEST response">${resp}</td>`;
+  if(ed)c+=`<td data-l="Receipt">${selHtml(OPT.receipt,it.receipt,'Not received',`data-chg="receipt" ${id}`)}</td><td data-l="Adequacy">${selHtml(OPT.adequacy,it.adequacy,'Not assessed',`data-chg="adequacy" ${id}`)}</td><td data-l="Verification">${selHtml(OPT.verified,it.verified,'Not yet',`data-chg="verified" ${id}`)}</td>`;
+  c+=`<td data-l="Status">${badge(s)}</td><td data-l="Received" style="white-space:nowrap">${it.received?fmtS(it.received):'—'}</td><td data-l="Link">${link}</td>`;
+  return`<tr>${c}</tr>`;
+ }).join('');
+ return`${bulkBar}<div class="tw"><table class="grid"><thead><tr>${cols.map(x=>`<th>${x}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table></div><div class="sub" style="margin-top:8px">${defs.length} shown</div>`;
+}
+function renderList(){const el=$('#trk-list');if(el)el.innerHTML=listHtml();}
+
+/* ---------- drawer ---------- */
+function drawerHtml(id){
+ const d=BY[id],it=st.items[id],ed=isEd(),s=statusOf(it);
+ const opts=d.kind==='Q'?OPT.respQ:OPT.respR;
+ const hist=st.log.filter(l=>l.ids.indexOf(id)>=0).map(l=>({l,s:summarize(l,id)})).filter(x=>x.s).slice(0,8);
+ const meta=d.kind==='Q'?`<dt>Workstream</dt><dd>${esc(WSL[d.ws])}</dd><dt>Original request IDs</dt><dd>${esc((d.orig||[]).join(', ')||'—')}</dd><dt>Priority package</dt><dd>${esc(d.pkg)} ${BY[d.pkg]?'· '+esc(BY[d.pkg].name):''}</dd>`
+  :d.kind==='R'?`<dt>Category</dt><dd>${esc(d.cat)}</dd><dt>Priority</dt><dd>${esc(d.priority)}</dd><dt>Requested from</dt><dd>${esc(d.from)}</dd><dt>Originally due</dt><dd>${esc(d.due||'—')}</dd>`
+  :`<dt>Original reference</dt><dd>${esc(d.ref)}</dd><dt>Why it is needed</dt><dd>${esc(d.reason)}</dd><dt>If no formal document</dt><dd>${esc(d.alt)}</dd>`;
+ let body=`<dl class="kv" style="margin-bottom:14px">${meta}</dl>`;
+ if(ed){
+  body+=`<div id="dr-form"><div class="fld"><label>ITGEST response (as returned)</label>${selHtml(opts,it.resp,'— not returned —','data-k="resp"')}</div>
+  <div class="two"><div class="fld"><label>Kabo receipt</label>${selHtml(OPT.receipt,it.receipt,'Not received','data-k="receipt"')}</div><div class="fld"><label>Date received</label><input type="date" class="f-in" data-k="received" value="${esc(it.received)}"></div></div>
+  <div class="two"><div class="fld"><label>Kabo adequacy</label>${selHtml(OPT.adequacy,it.adequacy,'Not assessed','data-k="adequacy"')}</div><div class="fld"><label>Kabo verification</label>${selHtml(OPT.verified,it.verified,'Not yet','data-k="verified"')}</div></div>
+  <div class="fld"><label>Evidence ID(s)</label><input class="f-in" data-k="evidence" value="${esc(it.evidence)}" placeholder="e.g. EV-014, EV-015"></div>
+  <div class="fld"><label>SharePoint link to the document</label><input class="f-in" data-k="link" value="${esc(it.link)}" placeholder="https://…"></div>
+  <div class="fld"><label>Public note (visible to ITGEST, GE Petrol and Kabo)</label><textarea class="f-in" rows="2" data-k="note">${esc(it.note)}</textarea></div>
+  <div class="fld"><label>Internal note (Kabo only, never shown to others)</label><textarea class="f-in" rows="2" data-k="internal">${esc(it.internal)}</textarea></div></div>`;
+ }else{
+  body+=`<dl class="kv"><dt>Status</dt><dd>${badge(s)}</dd><dt>ITGEST response</dt><dd>${it.resp?`<span class="chip ${respCls(it.resp)}">${esc(it.resp)}</span>`:'<span class="tbc">not returned</span>'}</dd>
+  <dt>Date received</dt><dd>${it.received?fmtD(it.received):'—'}</dd><dt>Evidence ID(s)</dt><dd>${esc(it.evidence||'—')}</dd>
+  <dt>Document</dt><dd>${okUrl(it.link)?`<a href="${esc(it.link)}" target="_blank" rel="noopener">Open in SharePoint ↗</a>`:'—'}</dd><dt>Note</dt><dd>${esc(it.note||'—')}</dd></dl>`;
+ }
+ body+=`<h3 style="margin-top:16px">History</h3>${hist.length?hist.map(x=>`<div class="li" style="cursor:default"><div class="id" style="min-width:82px;font-weight:600;color:var(--muted)">${fmtDT(x.l.ts)}</div><div>${esc(x.s)}<div class="sub">${esc(x.l.by)}</div></div></div>`).join(''):'<div class="sub">No changes recorded yet.</div>'}`;
+ return`<div class="scrim" data-act="close"></div><aside class="drawer" role="dialog" aria-label="${esc(id)} details"><div class="dr-h"><div><div class="sub">${d.kind==='Q'?'Question':d.kind==='R'?'Document request':'Priority package'} · ${badge(s)}</div><h2 style="margin:4px 0 0">${esc(id)} <span style="font-weight:500">${esc(cut(titleOf(d),160))}</span></h2></div><button class="btn ghost sm" data-act="close" aria-label="Close">✕</button></div>
+ <div class="dr-b">${body}</div>${ed?`<div class="dr-f"><button class="btn ghost" data-act="close">Cancel</button><button class="btn" data-act="dr-save">Save changes</button></div>`:''}</aside>`;
+}
+function renderLayer(){
+ const l=$('#layer');
+ if(ui.drawer)l.innerHTML=drawerHtml(ui.drawer);
+ else if(ui.modal==='signin')l.innerHTML=`<div class="scrim" data-act="close"></div><div class="modal" role="dialog" aria-label="Kabo sign-in"><h2>Kabo team sign-in</h2><p class="sub">Enter your name. It is recorded on every update you make. (Preview build: password sign-in is added when the shared database is connected.)</p><div class="fld"><label>Your name</label><input id="si-name" class="f-in" autocomplete="name" placeholder="e.g. Isaac Babson"></div><div style="display:flex;gap:8px;justify-content:flex-end"><button class="btn ghost" data-act="close">Cancel</button><button class="btn" data-act="signin-go">Sign in</button></div></div>`;
+ else l.innerHTML='';
+ if(ui.modal==='signin'){const i=$('#si-name');if(i)i.focus();}
+}
+function saveDrawer(){
+ const id=ui.drawer,patch={};
+ document.querySelectorAll('#dr-form [data-k]').forEach(el=>{patch[el.dataset.k]=el.value.trim?el.value.trim():el.value;});
+ if(patch.link&&!okUrl(patch.link)){toast('The SharePoint link must start with https://');return;}
+ const e=applyChanges([id],patch,'Edited '+id);
+ ui.drawer=null;if(e)toast('Saved '+id,e);render();
+}
+
+/* ---------- daily update ---------- */
+function relatedOf(ids){
+ const out=new Set();
+ ids.forEach(id=>{const d=BY[id];if(!d)return;
+  if(d.kind==='R'){Q.forEach(q=>{if(q.orig.indexOf(id)>=0){out.add(q.id);out.add(q.pkg);}});}
+  else if(d.kind==='P'){Q.forEach(q=>{if(q.pkg===id){out.add(q.id);q.orig.forEach(o=>{if(BY[o])out.add(o);});}});}
+  else{out.add(d.pkg);d.orig.forEach(o=>{if(BY[o])out.add(o);});}
+ });
+ ids.forEach(i=>out.delete(i));return Array.from(out).filter(i=>BY[i]);
+}
+function qlPatch(){
+ const p={receipt:QL.receipt};
+ if(QL.receipt==='Received')p.received=QL.date||today();
+ if(QL.adequacy)p.adequacy=QL.adequacy;if(QL.verified)p.verified=QL.verified;
+ if(QL.link.trim())p.link=QL.link.trim();if(QL.evidence.trim())p.evidence=QL.evidence.trim();if(QL.note.trim())p.note=QL.note.trim();
+ return p;
+}
+function qlDyn(){
+ const rel=relatedOf(QL.ids).filter(i=>QL.ids.indexOf(i)<0),p=qlPatch();
+ const prev=QL.ids.slice(0,12).map(id=>{const it=st.items[id],nx=Object.assign({},it,p);return`<tr><td><b>${id}</b></td><td>${esc(cut(titleOf(BY[id]),70))}</td><td>${badge(statusOf(it))} → ${badge(statusOf(nx))}</td></tr>`;}).join('');
+ return`${QL.msg?`<div class="warn" style="margin:6px 0">${esc(QL.msg)}</div>`:''}
+ <div class="qchips">${QL.ids.map(i=>`<span class="qchip">${i}<button data-act="ql-rm" data-id="${i}" aria-label="Remove ${i}">✕</button></span>`).join('')||'<span class="sub">No items chosen yet.</span>'}</div>
+ <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">${rel.length?`<button class="btn ghost sm" data-act="ql-related" title="Only add items this document actually helps answer">+ Add ${rel.length} related item${rel.length===1?'':'s'}</button>`:''}${QL.ids.length?'<button class="btn ghost sm" data-act="ql-clear">Clear all</button>':''}</div>
+ ${QL.ids.length?`<table class="mini"><thead><tr><th>ID</th><th>Item</th><th>Status change</th></tr></thead><tbody>${prev}</tbody></table>${QL.ids.length>12?`<div class="sub">+ ${QL.ids.length-12} more not shown</div>`:''}`:''}
+ <div style="margin-top:12px"><button class="btn" data-act="ql-apply"${QL.ids.length?'':' disabled'}>Apply to ${QL.ids.length} item${QL.ids.length===1?'':'s'}</button></div>`;
+}
+function vUpdate(){
+ if(!QL.date)QL.date=today();
+ const tod=st.log.filter(l=>isoDate(new Date(l.ts))===today()&&summarize(l));
+ const rq=ALL.filter(d=>statusOf(st.items[d.id])==='received').sort((a,b)=>(st.items[a.id].received||'').localeCompare(st.items[b.id].received||'')).slice(0,10);
+ const fu=ALL.filter(d=>statusOf(st.items[d.id])==='followup').slice(0,8);
+ return`<div class="pagehead"><div><h1>Daily update</h1><div class="sub">Three steps: log what arrived, review what is waiting, follow up what is incomplete.</div></div></div>
+ <div class="grid2" style="margin-bottom:16px"><div class="card"><h2>1 · Log documents received</h2>
+ <div class="fld"><label>Which items does the deposited document support?</label><input id="ql-in" class="f-in" style="width:100%" placeholder="Type an ID (PG-02, PRO-004, P1-06) or a word. Paste a list and press Enter." autocomplete="off"><div id="ql-sug"></div></div>
+ <div class="two"><div class="fld"><label>Receipt</label><select class="f-sel" style="width:100%;max-width:none" data-ql="receipt"><option${QL.receipt==='Received'?' selected':''}>Received</option><option${QL.receipt==='Not applicable'?' selected':''}>Not applicable</option><option value=""${QL.receipt===''?' selected':''}>Not received</option></select></div>
+ <div class="fld"><label>Date received</label><input type="date" class="f-in" style="width:100%" data-ql="date" value="${esc(QL.date)}"></div>
+ <div class="fld"><label>Adequacy (optional)</label>${selHtml(OPT.adequacy,QL.adequacy,'Leave unchanged','data-ql="adequacy" style="width:100%;max-width:none"')}</div>
+ <div class="fld"><label>Verification (optional)</label>${selHtml(OPT.verified,QL.verified,'Leave unchanged','data-ql="verified" style="width:100%;max-width:none"')}</div></div>
+ <div class="fld"><label>SharePoint link (optional)</label><input class="f-in" style="width:100%" data-qlt="link" placeholder="https://…" value="${esc(QL.link)}"></div>
+ <div class="two"><div class="fld"><label>Evidence ID(s) (optional)</label><input class="f-in" style="width:100%" data-qlt="evidence" placeholder="EV-001" value="${esc(QL.evidence)}"></div>
+ <div class="fld"><label>Public note (optional)</label><input class="f-in" style="width:100%" data-qlt="note" value="${esc(QL.note)}"></div></div>
+ <div id="ql-dyn">${qlDyn()}</div></div>
+ <div class="card"><h2>Today’s entries</h2>${tod.length?tod.slice(0,12).map(l=>`<div class="li" style="cursor:default"><div class="id" style="min-width:48px;font-weight:600;color:var(--muted)">${pad2(new Date(l.ts).getHours())}:${pad2(new Date(l.ts).getMinutes())}</div><div>${esc(summarize(l))}<div class="sub">${esc(l.by)}</div></div></div>`).join(''):'<div class="empty">Nothing logged today yet.</div>'}</div></div>
+ <div class="card"><h2>2 · Received, waiting for Kabo review <span class="chip b">${ALL.filter(d=>statusOf(st.items[d.id])==='received').length}</span></h2>${rq.length?rq.map(d=>{const it=st.items[d.id],w=daysTo(it.received);return`<div class="li" style="align-items:center"><div class="id" data-act="open" data-id="${d.id}" style="cursor:pointer">${d.id}</div><div style="flex:1" data-act="open" data-id="${d.id}">${esc(cut(titleOf(d),90))}<div class="sub">Received ${fmtD(it.received)}${w!==null&&w<0?' · waiting '+(-w)+' day'+(w===-1?'':'s'):''}</div></div>${selHtml(OPT.adequacy,'','Set adequacy…',`data-chg="adequacy" data-id="${d.id}"`)}</div>`;}).join(''):'<div class="empty">Nothing is waiting for review.</div>'}</div>
+ <div class="card"><h2>3 · Follow-up needed <span class="chip a">${ALL.filter(d=>statusOf(st.items[d.id])==='followup').length}</span></h2>${fu.length?fu.map(d=>{const it=st.items[d.id];return`<div class="li" data-act="open" data-id="${d.id}"><div class="id">${d.id}</div><div style="flex:1">${esc(cut(titleOf(d),90))}<div class="sub">${esc([it.adequacy,it.verified].filter(Boolean).join(' · '))}${it.note?' · '+esc(it.note):''}</div></div></div>`;}).join(''):'<div class="empty">No follow-ups outstanding.</div>'}</div>`;
+}
+function qlAdd(id){if(BY[id]&&QL.ids.indexOf(id)<0)QL.ids.push(id);}
+function qlParse(txt){
+ const unk=[];QL.msg='';
+ txt.split(/[\s,;]+/).filter(Boolean).forEach(t=>{const u=t.toUpperCase();if(BY[u])qlAdd(u);else unk.push(t);});
+ if(unk.length)QL.msg='Not recognised: '+unk.join(', ');
+ const el=$('#ql-dyn');if(el)el.innerHTML=qlDyn();
+}
+function qlApply(){
+ const p=qlPatch();
+ if(p.link&&!okUrl(p.link)){QL.msg='The SharePoint link must start with https://';$('#ql-dyn').innerHTML=qlDyn();return;}
+ const n=QL.ids.length,e=applyChanges(QL.ids.slice(),p,`Daily update (${n} items)`);
+ if(e){toast(`Updated ${e.ids.length} item${e.ids.length===1?'':'s'}`,e);}else toast('Nothing changed: those items already have these values.');
+ QL.ids=[];QL.adequacy='';QL.verified='';QL.link='';QL.evidence='';QL.note='';QL.msg='';render();
+}
+
+/* ---------- activity / help / settings ---------- */
+function vActivity(){
+ const ed=isEd();
+ let list=st.log.map(e=>({e,s:summarize(e)})).filter(x=>x.s);
+ if(ui.act==='today')list=list.filter(x=>isoDate(new Date(x.e.ts))===today());
+ if(ui.act==='7')list=list.filter(x=>Date.now()-new Date(x.e.ts)<7*864e5);
+ return`<div class="pagehead"><div><h1>Activity</h1><div class="sub">A dated record of every update. Entries cannot be edited or deleted.</div></div><div class="noprint"><button class="btn ghost sm" data-act="logcsv">Download log (CSV)</button></div></div>
+ <div class="chips noprint">${[['all','All'],['7','Last 7 days'],['today','Today']].map(c=>`<button class="${ui.act===c[0]?'on':''}" data-act="actf" data-v="${c[0]}">${c[1]}</button>`).join('')}</div>
+ <div class="card">${list.length?list.slice(0,300).map(x=>`<div class="li" style="cursor:default"><div class="id" style="min-width:96px;font-weight:600;color:var(--muted)">${fmtDT(x.e.ts)}</div><div style="flex:1">${esc(x.s)}<div class="sub">${esc(x.e.by)} · ${x.e.ids.length} item${x.e.ids.length===1?'':'s'}</div>${ed&&x.e.changes.length?`<details class="d" style="margin-top:6px"><summary>Show every change (${x.e.changes.length})</summary>${x.e.changes.slice(0,80).map(c=>`<div class="sub">${esc(c.id)} · ${esc(FL[c.f]||c.f)}: ${esc(c.f==='internal'?'(internal note)':(c.from||'—'))} → ${esc(c.f==='internal'?'updated':(c.to||'—'))}</div>`).join('')}</details>`:''}</div></div>`).join(''):'<div class="empty">No activity in this period.</div>'}</div>`;
+}
+function vHelp(){
+ return`<div class="pagehead"><div><h1>How this tracker works</h1><div class="sub">A plain-English guide for everyone using it.</div></div></div>
+ <div class="grid2" style="margin-bottom:16px"><div class="card"><h2>For PMO, SteerCo and stakeholders</h2>
+ <p>This page shows how much of the requested evidence has come back from <b>ITGEST</b> and <b>GE Petrol</b> for the Phase 0 retrospective review. <b>Kabo updates it every working day</b> as documents arrive in the project repository on the GE Petrol SharePoint. ITGEST answers in the response workbook; this page only tracks status.</p>
+ <h3>What the colours mean</h3>${ORDER.map(k=>`<p style="margin:4px 0">${badge(k)} ${esc(STAT[k].desc)}</p>`).join('')}
+ <h3 style="margin-top:12px">Good to know</h3><ul><li><b>Received is not the same as adequate.</b> Kabo reviews each item, then verifies it.</li><li>A missing document limits assurance. It does not by itself prove the work was not delivered.</li><li>The <b>12 priority packages</b> are the essentials; the <b>57 requests</b> are the original list; the <b>117 questions</b> are the detailed answers Kabo needs.</li><li>ITGEST response codes: <b>A</b> available · <b>B</b> exists, pending · <b>C</b> not created or maintained · <b>D</b> not applicable.</li></ul></div>
+ <div class="card"><h2>For the Kabo team</h2><ol class="steps"><li><b>Log what arrived.</b> Go to <i>Daily update</i>. Type or paste the IDs the deposited document supports, set the date, add the SharePoint link, press Apply. Made a mistake? Press <b>Undo</b> on the message that appears.</li><li><b>Review what is waiting.</b> The “Received, waiting for Kabo review” list shows the oldest first. Pick Adequate, Partly adequate or Inadequate straight from the list.</li><li><b>Follow up.</b> Anything partly adequate or inadequate appears under “Follow-up needed”. Open it, add a note, and mark Verified when resolved.</li></ol>
+ <h3 style="margin-top:12px">Tips</h3><ul><li>In the <i>Tracker</i>, change dropdowns directly in the row. Tick several rows to update them together.</li><li>Use the <b>Internal note</b> for anything not for ITGEST or GE Petrol. It is never shown to others.</li><li>Every change is time-stamped in <i>Activity</i>, which gives a valid record of what arrived and when.</li></ul></div></div>`;
+}
+function vSettings(){
+ const c=st.config,f=(k,l,t,ph)=>`<div class="fld"><label>${l}</label><input class="f-in" type="${t||'text'}" data-cfg="${k}" value="${esc(c[k])}" placeholder="${esc(ph||'')}"></div>`;
+ return`<div class="pagehead"><div><h1>Settings</h1><div class="sub">Key dates and contacts shown on the dashboard, plus backup and sharing tools.</div></div></div>
+ <div class="grid2" style="margin-bottom:16px"><div class="card"><h2>Key dates and contacts</h2>${f('coordinator','ITGEST coordinator name','text','Name, role')}${f('coordEmail','ITGEST coordinator email','text','name@…')}${f('sponsor','GE Petrol sponsor','text','Name, role')}
+ <div class="two">${f('coordDue','Coordinator to be named by','date')}${f('returnDue','Single return due','date')}</div>${f('cutoff','Evidence cut-off date','date')}${f('repo','SharePoint repository link','text','https://…')}</div>
+ <div class="card"><h2>Backup, records and sharing</h2><p class="sub">Entries are saved in this browser. Download a backup regularly.</p>
+ <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-start"><button class="btn" data-act="snapshot">Share a read-only snapshot (HTML file)</button><button class="btn ghost" data-act="csv">Download tracker (CSV)</button><button class="btn ghost" data-act="logcsv">Download activity log (CSV)</button><button class="btn ghost" data-act="jsonout">Download full backup (JSON)</button>
+ <label class="btn ghost" style="cursor:pointer">Restore from backup…<input type="file" accept=".json,application/json" id="jsonin" hidden></label></div>
+ <h3 style="margin-top:16px">Preview tools</h3><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn ghost sm" data-act="sample">Load sample data</button><button class="btn danger sm" data-act="reset">Reset everything</button></div></div></div>`;
+}
+const VIEWS={dashboard:vDash,tracker:vTracker,update:vUpdate,activity:vActivity,help:vHelp,settings:vSettings};
+
+/* ---------- export ---------- */
+function download(name,text,mime){const b=new Blob([text],{type:mime}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},500);}
+const csvc=v=>'"'+String(v==null?'':v).replace(/"/g,'""')+'"';
+function csvTracker(){
+ const h=['Type','ID','Workstream / category','Item','Priority','Requested from','Original IDs','Package','ITGEST response','Kabo status','Receipt','Date received','Adequacy','Verification','Evidence IDs','SharePoint link','Public note','Last updated','Updated by'];
+ const rows=ALL.map(d=>{const it=st.items[d.id];return[d.kind==='Q'?'Question':d.kind==='R'?'Request':'Package',d.id,d.kind==='Q'?WSL[d.ws]:d.kind==='R'?d.cat:d.ref,titleOf(d),d.priority||'',d.from||'',(d.orig||[]).join(' '),d.pkg||'',it.resp,STAT[statusOf(it)].label,it.receipt||'Not received',it.received,it.adequacy,it.verified,it.evidence,it.link,it.note,it.updated,it.by];});
+ return'\ufeff'+[h].concat(rows).map(r=>r.map(csvc).join(',')).join('\r\n');
+}
+function csvLog(){
+ const rows=[['Time','By','Item','Field','From','To']];
+ st.log.slice().reverse().forEach(e=>{if(!e.changes.length)rows.push([e.ts,e.by,'','',e.label,'']);e.changes.forEach(c=>{if(c.f==='internal')return;rows.push([e.ts,e.by,c.id,FL[c.f]||c.f,c.from,c.to]);});});
+ return'\ufeff'+rows.map(r=>r.map(csvc).join(',')).join('\r\n');
+}
+function snapshot(){
+ const cp=JSON.parse(JSON.stringify(st));cp.demo=st.demo;
+ Object.keys(cp.items).forEach(k=>{cp.items[k].internal='';});
+ cp.log.forEach(l=>{l.changes=l.changes.filter(c=>c.f!=='internal');});
+ const tag='<script id="snapshot-data" type="application/json">'+JSON.stringify({state:cp,takenAt:new Date().toISOString()}).replace(/</g,'\\u003c')+'<\/script>';
+ let html=SRC.replace(/<script id="snapshot-data"[\s\S]*?<\/script>\s*/,'');
+ html=html.replace('</head>',()=>tag+'\n</head>');
+ download('KABO_ITGEST_Tracker_Snapshot_'+today()+'.html',html,'text/html');
+ toast('Snapshot downloaded. Internal notes were removed.');
+}
+function loadSample(){
+ if(!confirm('Load sample data? This replaces everything currently in this browser.'))return;
+ st=fresh();st.demo=true;let s=11;const rnd=()=>{s=(s*9301+49297)%233280;return s/233280;};
+ const pick=a=>a[Math.floor(rnd()*a.length)];
+ ALL.forEach(d=>{const it=st.items[d.id],r=rnd();
+  if(r<.5){it.receipt='Received';const dt=new Date();dt.setDate(dt.getDate()-Math.floor(rnd()*6));it.received=isoDate(dt);
+   it.resp=d.kind==='Q'?pick(OPT.respQ.slice(0,3)):pick(OPT.respR.slice(0,2));
+   const r2=rnd();if(r2<.7){it.adequacy=r2<.42?'Adequate':r2<.6?'Partly adequate':'Inadequate';if(it.adequacy==='Adequate'&&rnd()<.5)it.verified='Verified';}
+   it.link='https://example.sharepoint.com/sample-document';it.updated=dt.toISOString();it.by='Sample';}
+  else if(r<.58){it.resp=d.kind==='Q'?'No':'C Not created/maintained';}
+ });
+ st.config.coordinator='Sample coordinator';st.config.returnDue=isoDate(new Date(Date.now()+3*864e5));
+ st.log=[{id:uid(),ts:new Date().toISOString(),by:'Sample',label:'Sample data',ids:['P1-01','PG-01'],changes:[{id:'P1-01',f:'receipt',from:'',to:'Received'},{id:'PG-01',f:'receipt',from:'',to:'Received'}]}];
+ save();render();toast('Sample data loaded');
+}
+
+/* ---------- render / events ---------- */
+function route(){const h=(location.hash||'#/dashboard').replace(/^#\//,'').split('?')[0];let v=VIEWS[h]?h:'dashboard';if((v==='update'||v==='settings')&&!isEd())v='dashboard';ui.view=v;}
+function render(){
+ const y=window.scrollY;route();
+ $('#app').innerHTML=shell()+`<main id="view">${VIEWS[ui.view]()}</main><footer class="noprint">Kabo Solutions Inc. · Independent QA/QC Assurance · Status is recorded by Kabo from documents deposited in the GE Petrol project repository. Contract reference KABO-PNS-ENG-001.</footer>`;
+ renderLayer();window.scrollTo(0,y);
+}
+function goto(o){
+ ui.tab=o.tab||ui.tab;ui.f={q:'',ws:o.ws||'',status:o.status||'',owner:o.owner||'',pri:o.pri||''};ui.sel.clear();
+ if(location.hash==='#/tracker')render();else location.hash='#/tracker';
+}
+document.addEventListener('click',e=>{
+ const a=e.target.closest('[data-act]');if(!a)return;
+ const act=a.dataset.act,ds=a.dataset;
+ if(act==='open'){if(e.target.closest('select,input,a'))return;ui.drawer=ds.id;renderLayer();return;}
+ if(act==='close'){ui.drawer=null;ui.modal=null;renderLayer();return;}
+ if(act==='go'){e.preventDefault();goto(ds);return;}
+ if(act==='tab'){ui.tab=ds.v;ui.f={q:'',ws:'',status:'',owner:'',pri:''};ui.sel.clear();render();return;}
+ if(act==='status'){ui.f.status=ds.v;render();return;}
+ if(act==='signin'){ui.modal='signin';renderLayer();return;}
+ if(act==='signin-go'){const n=($('#si-name').value||'').trim();if(!n){$('#si-name').focus();return;}sess={role:'editor',name:n};try{sessionStorage.setItem(SS,JSON.stringify(sess));}catch(x){}ui.modal=null;render();return;}
+ if(act==='signout'){sess={role:'viewer',name:''};try{sessionStorage.removeItem(SS);}catch(x){}if(location.hash==='#/update'||location.hash==='#/settings')location.hash='#/dashboard';render();return;}
+ if(act==='undo'){const t=$('#toast');if(t&&t._e){undo(t._e);t.remove();}return;}
+ if(act==='print'){window.print();return;}
+ if(act==='csv'){download('KABO_ITGEST_Tracker_'+today()+'.csv',csvTracker(),'text/csv');return;}
+ if(act==='logcsv'){download('KABO_ITGEST_Activity_'+today()+'.csv',csvLog(),'text/csv');return;}
+ if(act==='jsonout'){download('KABO_ITGEST_Tracker_Backup_'+today()+'.json',JSON.stringify(st),'application/json');return;}
+ if(act==='snapshot'){snapshot();return;}
+ if(act==='sample'){loadSample();return;}
+ if(act==='reset'){if(confirm('Reset everything in this browser? This cannot be undone. Download a backup first.')){st=fresh();save();render();toast('Reset complete');}return;}
+ if(act==='actf'){ui.act=ds.v;render();return;}
+ if(act==='dr-save'){saveDrawer();return;}
+ if(act==='b-recv'){bulk({receipt:'Received'},'Bulk: mark received');return;}
+ if(act==='b-na'){bulk({receipt:'Not applicable'},'Bulk: not applicable');return;}
+ if(act==='ql-add'){qlAdd(ds.id);$('#ql-in').value='';$('#ql-sug').innerHTML='';QL.msg='';$('#ql-dyn').innerHTML=qlDyn();return;}
+ if(act==='ql-rm'){QL.ids=QL.ids.filter(i=>i!==ds.id);$('#ql-dyn').innerHTML=qlDyn();return;}
+ if(act==='ql-related'){relatedOf(QL.ids).forEach(qlAdd);$('#ql-dyn').innerHTML=qlDyn();return;}
+ if(act==='ql-clear'){QL.ids=[];QL.msg='';$('#ql-dyn').innerHTML=qlDyn();return;}
+ if(act==='ql-apply'){qlApply();return;}
+});
+document.addEventListener('change',e=>{
+ const t=e.target,d=t.dataset||{};
+ if(d.chg){setField(d.id,d.chg,t.value);return;}
+ if(d.sel!==undefined&&d.sel!==''){if(t.checked)ui.sel.add(d.sel);else ui.sel.delete(d.sel);renderList();return;}
+ if(t.id==='selall'){filtered().forEach(x=>{if(t.checked)ui.sel.add(x.id);else ui.sel.delete(x.id);});renderList();return;}
+ if(d.flt){ui.f[d.flt]=t.value;renderList();return;}
+ if(t.id==='bulk-adq'&&t.value){bulk({adequacy:t.value},'Bulk: adequacy');return;}
+ if(t.id==='bulk-ver'&&t.value){bulk({verified:t.value},'Bulk: verification');return;}
+ if(d.ql){QL[d.ql]=t.value;const el=$('#ql-dyn');if(el)el.innerHTML=qlDyn();return;}
+ if(d.cfg){st.config[d.cfg]=t.value.trim();const e2={id:uid(),ts:new Date().toISOString(),by:sess.name||'Kabo',label:'Settings updated: '+d.cfg,ids:[],changes:[]};st.log.unshift(e2);save();toast('Saved');return;}
+ if(t.id==='jsonin'&&t.files[0]){const r=new FileReader();r.onload=()=>{try{const o=JSON.parse(r.result);if(!o.items||!o.log)throw 0;ALL.forEach(x=>{if(!o.items[x.id])o.items[x.id]=blankItem();});st=o;save();render();toast('Backup restored');}catch(x){toast('That file is not a valid backup.');}};r.readAsText(t.files[0]);}
+});
+document.addEventListener('input',e=>{
+ const t=e.target;
+ if(t.id==='q'){ui.f.q=t.value;renderList();return;}
+ if(t.dataset&&t.dataset.qlt){QL[t.dataset.qlt]=t.value;return;}
+ if(t.id==='ql-in'){const term=t.value.trim().toLowerCase(),box=$('#ql-sug');if(!term){box.innerHTML='';return;}
+  const m=ALL.filter(d=>QL.ids.indexOf(d.id)<0&&(d.id.toLowerCase().indexOf(term)>=0||titleOf(d).toLowerCase().indexOf(term)>=0)).slice(0,8);
+  box.innerHTML=m.length?`<div class="sug">${m.map(d=>`<button data-act="ql-add" data-id="${d.id}"><b>${d.id}</b> · ${esc(cut(titleOf(d),80))}</button>`).join('')}</div>`:'';}
+});
+document.addEventListener('keydown',e=>{
+ if(e.key==='Escape'&&(ui.drawer||ui.modal)){ui.drawer=null;ui.modal=null;renderLayer();}
+ if(e.key==='Enter'&&e.target.id==='ql-in'){e.preventDefault();const v=e.target.value;qlParse(v);e.target.value='';$('#ql-sug').innerHTML='';}
+ if(e.key==='Enter'&&e.target.id==='si-name'){const b=document.querySelector('[data-act="signin-go"]');if(b)b.click();}
+});
+window.addEventListener('hashchange',()=>{ui.drawer=null;render();});
+render();
+
+</script>
+</body>
+</html>
